@@ -1,0 +1,71 @@
+/* line 2, ../../Proyecto Javascript/scss/styles.scss */
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+/* line 7, ../../Proyecto Javascript/scss/styles.scss */
+* {
+  Margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 13, ../../Proyecto Javascript/scss/styles.scss */
+body {
+  min-height: 100%;
+}
+
+/* line 19, ../../Proyecto Javascript/scss/styles.scss */
+#contenedor {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "navegador" "encabezado" "principal" "pie";
+  grid-template-columns: 100%;
+  grid-template-rows: 10rem auto auto 8rem;
+}
+
+/* line 33, ../../Proyecto Javascript/scss/styles.scss */
+.navegador {
+  grid-area: navegador;
+}
+
+/* line 36, ../../Proyecto Javascript/scss/styles.scss */
+.navegador .navbar {
+  height: 10rem;
+}
+
+/* line 39, ../../Proyecto Javascript/scss/styles.scss */
+.navegador .navbar a {
+  font-size: large;
+}
+
+/* line 46, ../../Proyecto Javascript/scss/styles.scss */
+header {
+  grid-area: encabezado;
+  background-color: rgba(145, 145, 145, 0.91);
+}
+
+/* line 51, ../../Proyecto Javascript/scss/styles.scss */
+.principal {
+  grid-area: principal;
+  background-color: rgba(145, 145, 145, 0.91);
+}
+
+/* line 56, ../../Proyecto Javascript/scss/styles.scss */
+.pie {
+  grid-area: pie;
+  background-color: rgba(145, 145, 145, 0.91);
+}
+
+/* line 63, ../../Proyecto Javascript/scss/styles.scss */
+.logo {
+  width: 10rem;
+}
+
+/* line 67, ../../Proyecto Javascript/scss/styles.scss */
+.container {
+  height: 30rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
