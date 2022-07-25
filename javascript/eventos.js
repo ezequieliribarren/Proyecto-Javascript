@@ -5,6 +5,20 @@ let usuario = prompt("Ingrese su usuario");
 let contrasenia = prompt("Ingrese su contraseña");
 let eventoFavorito = prompt("Ingrese su evento favorito (Automovilismo = aut - Futbol = fut - Todas = tod )");
 
+function mostrarAutomovilismo () {
+    alert ("Segun su elección le brindamos el siguiente reporte semanal: \n 31 de julio \n Turismo Nacional - Termas de Río Hondo: 18:00 hs (Argentina) \n Top Race - Rafaela: 15:00 hs (Argentina) \n Fórmula 1 - Hungría: 11:00 hs (Argentina) \n Formula E - Londres: 13:00 hs (Argentina) \n NASCAR - Indianapolis: 06:00 hs (Argentina)");
+
+}
+
+function mostrarFutbol(){
+    alert("Futbol \n\n Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina)");
+}
+function mostrarTodo () {
+    alert("Futbol \n\n Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina) \n\n Automovilismo \n\n 31 de julio \n Turismo Nacional - Termas de Río Hondo: 18:00 hs (Argentina) \n Top Race - Rafaela: 15:00 hs (Argentina) \n Fórmula 1 - Hungría: 11:00 hs (Argentina) \n Formula E - Londres: 13:00 hs (Argentina) \n NASCAR - Indianapolis: 06:00 hs (Argentina)");
+}
+
+
+
 eventoFavorito.toLowerCase
 let datos = ":";
 let competencias = "";
@@ -87,15 +101,15 @@ else {
 }
 
 if (eventoFavorito == "fut") {
-    alert ("Segun su elección le brindamos el siguiente reporte semanal: \n Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina) "  )
+mostrarFutbol ()
 }
 
 else if (eventoFavorito == "aut") {
-    alert ("Segun su elección le brindamos el siguiente reporte semanal: \n 31 de julio \n Turismo Nacional - Termas de Río Hondo: 18:00 hs (Argentina) \n Top Race - Rafaela: 15:00 hs (Argentina) \n Fórmula 1 - Hungría: 11:00 hs (Argentina) \n Formula E - Londres: 13:00 hs (Argentina) \n NASCAR - Indianapolis: 06:00 hs (Argentina)")
+mostrarAutomovilismo ()
 }
 
 else if (eventoFavorito == "tod") {
-    alert("Futbol \n\n Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina) \n\n Automovilismo \n\n 31 de julio \n Turismo Nacional - Termas de Río Hondo: 18:00 hs (Argentina) \n Top Race - Rafaela: 15:00 hs (Argentina) \n Fórmula 1 - Hungría: 11:00 hs (Argentina) \n Formula E - Londres: 13:00 hs (Argentina) \n NASCAR - Indianapolis: 06:00 hs (Argentina)")
+mostrarTodo ()
 }
 
 else {
