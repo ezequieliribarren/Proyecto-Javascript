@@ -87,15 +87,15 @@ else {
 }
 
 if (eventoFavorito == "fut") {
-    alert ("Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina) "  )
+    alert ("Segun su elección le brindamos el siguiente reporte semanal: \n Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina) "  )
 }
 
 else if (eventoFavorito == "aut") {
-    alert ("31 de julio \n  Turismo Nacional - Termas de Río Hondo \n Top Race - Rafaela \n Fórmula 1 - Hungría \n Formula E - Londres \n NASCAR - Indianapolis")
+    alert ("Segun su elección le brindamos el siguiente reporte semanal: \n 31 de julio \n Turismo Nacional - Termas de Río Hondo: 18:00 hs (Argentina) \n Top Race - Rafaela: 15:00 hs (Argentina) \n Fórmula 1 - Hungría: 11:00 hs (Argentina) \n Formula E - Londres: 13:00 hs (Argentina) \n NASCAR - Indianapolis: 06:00 hs (Argentina)")
 }
 
 else if (eventoFavorito == "tod") {
-    alert("Futbol \n\n Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina) \n\n Automovilismo \n\n 31 de julio \n Turismo Nacional - Termas de Río Hondo \n Top Race - Rafaela \n Fórmula 1 - Hungría \n Formula E - Londres \n NASCAR - Indianapolis")
+    alert("Futbol \n\n Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina) \n\n Automovilismo \n\n 31 de julio \n Turismo Nacional - Termas de Río Hondo: 18:00 hs (Argentina) \n Top Race - Rafaela: 15:00 hs (Argentina) \n Fórmula 1 - Hungría: 11:00 hs (Argentina) \n Formula E - Londres: 13:00 hs (Argentina) \n NASCAR - Indianapolis: 06:00 hs (Argentina)")
 }
 
 else {
