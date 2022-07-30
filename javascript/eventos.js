@@ -1,48 +1,10 @@
-
-// Funciones
-function mostrarAutomovilismo() {
-    alert("Segun su elección le brindamos el siguiente reporte semanal: \n 31 de julio \n Turismo Nacional - Termas de Río Hondo: 18:00 hs (Argentina) \n Top Race - Rafaela: 15:00 hs (Argentina) \n Fórmula 1 - Hungría: 11:00 hs (Argentina) \n Formula E - Londres: 13:00 hs (Argentina) \n NASCAR - Indianapolis: 06:00 hs (Argentina)");
-
-}
-function mostrarFutbol() {
-    alert("Futbol \n\n Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina)");
-}
-function mostrarTodo() {
-    alert("Futbol \n\n Partidos de esta semana \n Champions League: \n Real Madrid vs Liverpool \n Jueves 18:00 hs (Argentina) \n Copa Libertadores: \n Velez Sarsfield vs Estudiantes de la Plata \n Martes 19:00 hs (Argentina) \n\n Automovilismo \n\n 31 de julio \n Turismo Nacional - Termas de Río Hondo: 18:00 hs (Argentina) \n Top Race - Rafaela: 15:00 hs (Argentina) \n Fórmula 1 - Hungría: 11:00 hs (Argentina) \n Formula E - Londres: 13:00 hs (Argentina) \n NASCAR - Indianapolis: 06:00 hs (Argentina)");
-}
-function elegirCompetencias (){
-    if (eventoFavorito == "aut") {
-        while (competencias != "s") {
-            datos = datos + " " + competencias + " -"
-            competencias = prompt("Usted a seleccionado Automovilismo, por favor enumere sus competencias favoritas para realizar el seguimiento. Ejemplo: Turismo carretera, Formula 1, Nascar, Rally. Presione s para finalizar.");
-    
-    
-        }
-    
-        alert("Sus competencias favoritas son " + datos);
-    
-    }
-    
-    else if (eventoFavorito == "fut") {
-        while (competencias != "s") {
-            datos = datos + " " + competencias + " -"
-            competencias = prompt("Usted a seleccionado Futbol, por favor enumere sus competencias favoritas para realizar el seguimiento. Ejemplo: Champions League, Copa Libertadores, Torneo Local. Presione s para finalizar.");
-    
-    
-        }
-    
-        alert("Sus competencias favoritas son " + datos);
-    }
-    
-    else if (eventoFavorito == "tod") {
-        alert("Usted ha seleccionado estar al tanto de todos los eventos, puede accerder a la información de todas las competiciones.")
-    }
-    
-    else {
-        alert("Usted ha seleccionado un valor incorrecto. En su perfil vuelva a seleccionar sus preferencias de competencias.")
-    }
-}
+// // Funciones
 function inicioDeSesion () {
+    alert("Inicie sesión para acceder a sus eventos favoritos")
+
+let usuario1 = prompt("Ingrese su usuario");
+let contrasenia1 = prompt("Ingrese su contraseña");
+
     if (usuario1 == usuario && contrasenia1 == contrasenia) {
         alert("Felicitaciones " + nombre + " has ingresado a tu cuenta ");
     }
@@ -84,42 +46,275 @@ function inicioDeSesion () {
 }
 
 // Registro
-alert("Registrese para obtener información sobre las competiciones deporitvas");
+alert("Registrese para estar al tanto de los ultimos datos de F1.");
 let nombre = prompt("Ingrese su nombre");
 let usuario = prompt("Ingrese su usuario");
 let contrasenia = prompt("Ingrese su contraseña");
-let eventoFavorito = prompt("Ingrese su evento favorito (Automovilismo = aut - Futbol = fut - Todas = tod )");
-eventoFavorito.toLowerCase
-
-// Bucle
-let datos = ":";
-let competencias = "";
-
-elegirCompetencias()
+let nacionalidad = prompt("Ingrese su nacionalidad");
 
 alert("Felicitaciones " + nombre + " te has registrado con exito");
 
-alert("Inicie sesión para acceder a sus eventos favoritos")
+// Arrays de objetos
+const pilotos = [
+    {
+        piloto: "Max Verstappen",
+        numero: 1,
+        equipo: "Red Bull Racing",
+        posicion: 1,
+        puntos: 233,
+    },
+    {
+        piloto: "Charles Leclerc",
+        numero: 16,
+        equipo: "Ferrari",
+        posicion: 2,
+        puntos: 170,
 
-let usuario1 = prompt("Ingrese su usuario");
-let contrasenia1 = prompt("Ingrese su contraseña");
+    },
+    {
+        piloto: "Sergio Perez",
+        numero: 11,
+        equipo: "Red Bull Racing",
+        posicion: 3,
+        puntos: 163,
+    },
+    {
+        piloto: "Carlos Sainz",
+        numero: 55,
+        equipo: "Ferrari",
+        posicion: 4,
+        puntos: 144,
 
-inicioDeSesion()
+    },
+    {
+        piloto: "George Russell",
+        numero: 63,
+        equipo: "Mercedes Benz",
+        posicion: 5,
+        puntos: 143,
+    },
+    {
+        piloto: "Lewis Hamilton",
+        numero: 44,
+        equipo: "Mercedes Benz",
+        posicion: 6,
+        puntos: 127,
 
-if (eventoFavorito == "fut") {
-    mostrarFutbol()
+    },
+    {
+        piloto: "Lando Norris",
+        numero: 4,
+        equipo: "McLaren",
+        posicion: 7,
+        puntos: 70,
+    },
+    {
+        piloto: "Esteban Ocon",
+        numero: 31,
+        equipo: "Alpine",
+        posicion: 8,
+        puntos: 56,
+    },
+    {
+        piloto: "Valtteri Bottas",
+        numero: 77,
+        equipo: "Alfa Romeo",
+        posicion: 9,
+        puntos: 46,
+    },
+    {
+        piloto: "Fernando Alonso",
+        numero: 14,
+        equipo: "Alpine",
+        posicion: 10,
+        puntos: 37,
+
+    },
+    {
+        piloto: "Kevin Magnussen",
+        numero: 20,
+        equipo: "Haas F1 Team",
+        posicion: 11,
+        puntos: 22,
+    },
+    {
+        piloto: "Daniel Ricciardo",
+        numero: 3,
+        equipo: "McLaren",
+        posicion: 12,
+        puntos: 19,
+
+    },
+    {
+        piloto: "Pierre Gasly",
+        numero: 10,
+        equipo: "AlphaTauri",
+        posicion: 13,
+        puntos: 16,
+    },
+    {
+        piloto: "Sebastian Vettel",
+        numero: 5,
+        equipo: "Aston Martin",
+        posicion: 14,
+        puntos: 15,
+
+    },
+    {
+        piloto: "Mick Schumacher",
+        numero: 47,
+        equipo: "Haas F1 Team",
+        posicion: 15,
+        puntos: 12,
+    },
+    {
+        piloto: "Yuki Tsunoda",
+        numero: 22,
+        equipo: "AlphaTauri",
+        posicion: 16,
+        puntos: 11,
+
+    },
+    {
+        piloto: "Zhou Guanyu",
+        numero: 24,
+        equipo: "Alfa Romeo",
+        posicion: 17,
+        puntos: 5,
+    },
+    {
+        piloto: "Lance Stroll",
+        numero: 18,
+        equipo: "Aston Martin",
+        posicion: 18,
+        puntos: 4,
+
+    },
+    {
+        piloto: "Alexander Albon",
+        numero: 23,
+        equipo: "Williams",
+        posicion: 19,
+        puntos: 3,
+    },
+    {
+        piloto: "Nicholas Latifi",
+        numero: 6,
+        equipo: "Williams",
+        posicion: 20,
+        puntos: 0,
+    },
+    {
+        piloto: "Niko Hulkenberg",
+        numero: 27,
+        equipo: "Aston Martin",
+        posicion: 21,
+        puntos: 0,
+    },
+    {
+        piloto: "Nikita Mazepin",
+        numero: 9,
+        equipo: "Hass F1 Team",
+        posicion: 0 ,
+        puntos: 0,
+    }
+
+];
+
+const equipos = [
+    {
+        equipo: "Red Bull Racing",
+        piloto1: "Max Verstappen",
+        piloto2: "Sergio Perez",
+        posicion: 1,
+        puntos: 396,
+    },
+    {
+        equipo: "Ferrari",
+        piloto1: "Charles Leclerc",
+        piloto2: "Carlos Sainz",
+        posicion: 2,
+        puntos: 314,
+    },
+    {
+        equipo: "Mercedes Benz",
+        piloto1: "George Russell",
+        piloto2: "Lewis Hamilton",
+        posicion: 3,
+        puntos: 270,
+    },
+    {
+        equipo: "Alpine",
+        piloto1: "Esteban Ocon",
+        piloto2: "Fernando Alonso",
+        posicion: 4,
+        puntos: 93,
+    },
+
+    {
+        equipo: "McLaren",
+        piloto1: "Lando Norris",
+        piloto2: "Daniel Ricciardo",
+        posicion: 5,
+        puntos: 89,
+    },
+    {
+        equipo: "Alfa Romeo",
+        piloto1: "Zhou Guanyu",
+        piloto2: "Valtteri Botas",
+        posicion: 6,
+        puntos: 51,
+    },    
+    {
+        equipo: "Haas F1 Team",
+        piloto1: "Kevin Magnussen",
+        piloto2: "Mick Schumacher",
+        posicion: 7,
+        puntos: 34,
+    },   
+    {
+        equipo: "AlphaTauri",
+        piloto1: "Pierre Gasly",
+        piloto2: "Yuki Tsunoda",
+        posicion: 8,
+        puntos: 27,
+    },
+    {
+        equipo: "Aston Martin",
+        piloto1: "Sebastian Vettel",
+        piloto2: "Lance Stroll",
+        posicion: 9,
+        puntos: 19,
+    },
+
+    {
+        equipo: "Williams",
+        piloto1: "Alexander Albon",
+        piloto2: "Nicholas Latifi",
+        posicion: 10,
+        puntos: 3,
+    },
+
+];
+
+pilotos.pop ()
+
+// inicioDeSesion();
+
+
+console.log ("A continuación les mostramos la tabla de posiciones actual: ")
+for(const piloto of pilotos){
+    console.log(piloto.piloto);
+    console.log(piloto.posicion);
 }
 
-else if (eventoFavorito == "aut") {
-    mostrarAutomovilismo()
+console.log ("El campeonato tiene un total de " + pilotos.length + " pilotos")
+
+console.log ("Mientras tanto en la tabla de posiciones constructora (por equipo) podemos encontrar el siguiente orden:")
+for(const equipo of equipos){
+    console.log(equipo.equipo);
+    console.log(equipo.posicion);
 }
 
-else if (eventoFavorito == "tod") {
-    mostrarTodo()
-}
-
-else {
-    alert("Usted no ha seleccionado sus preferencias, editelas desde su perfil en la barra superior izquierda.")
-}
-
+console.log ("El campeonato tiene un total de " + equipos.length + " equipos")
 
