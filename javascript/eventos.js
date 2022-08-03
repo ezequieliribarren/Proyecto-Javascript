@@ -318,3 +318,22 @@ for(const equipo of equipos){
 
 console.log ("El campeonato tiene un total de " + equipos.length + " equipos")
 
+const pistas = ["España", "Hungria", "Alemania"];
+
+const calendario = [];
+
+function generar (pista){
+    let resultado = pistas.find((el) => el === pista)
+    if(resultado=true) {
+        calendario.push (pista)}
+
+}
+
+generar ("España")
+generar ("Alemania")
+
+
+
+
+console.log (calendario)
+

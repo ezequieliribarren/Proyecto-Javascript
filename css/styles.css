@@ -31,47 +31,110 @@ body {
   grid-template-rows: 10rem auto auto 8rem;
 }
 
-/* line 40, ../../Proyecto Javascript/scss/styles.scss */
+/* line 41, ../../Proyecto Javascript/scss/styles.scss */
 .navegador {
   grid-area: navegador;
 }
 
-/* line 43, ../../Proyecto Javascript/scss/styles.scss */
+/* line 44, ../../Proyecto Javascript/scss/styles.scss */
 .navegador .navbar {
   height: 10rem;
 }
 
-/* line 46, ../../Proyecto Javascript/scss/styles.scss */
+/* line 47, ../../Proyecto Javascript/scss/styles.scss */
 .navegador .navbar a {
   font-size: large;
 }
 
 /* line 53, ../../Proyecto Javascript/scss/styles.scss */
+.logo {
+  width: 10rem;
+}
+
+/* line 57, ../../Proyecto Javascript/scss/styles.scss */
 header {
   grid-area: encabezado;
   background-color: rgba(145, 145, 145, 0.91);
+  display: flex;
+  justify-content: center;
 }
 
-/* line 58, ../../Proyecto Javascript/scss/styles.scss */
+/* line 64, ../../Proyecto Javascript/scss/styles.scss */
 .principal {
   grid-area: principal;
   background-color: rgba(145, 145, 145, 0.91);
 }
 
-/* line 63, ../../Proyecto Javascript/scss/styles.scss */
+/* line 69, ../../Proyecto Javascript/scss/styles.scss */
 .pie {
   grid-area: pie;
   background-color: rgba(145, 145, 145, 0.91);
 }
 
-/* line 70, ../../Proyecto Javascript/scss/styles.scss */
-.logo {
-  width: 10rem;
+/* line 77, ../../Proyecto Javascript/scss/styles.scss */
+.carousel {
+  width: 90rem;
+  padding: 3rem;
 }
 
-/* line 74, ../../Proyecto Javascript/scss/styles.scss */
-.container {
-  height: 30rem;
+/* line 81, ../../Proyecto Javascript/scss/styles.scss */
+.carousel img {
+  width: 100%;
+}
+
+/* line 89, ../../Proyecto Javascript/scss/styles.scss */
+.fechaPais {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+/* line 95, ../../Proyecto Javascript/scss/styles.scss */
+.flexCalendario {
+  display: flex;
+}
+
+/* line 100, ../../Proyecto Javascript/scss/styles.scss */
+.imgCalendario img {
+  width: 100%;
+}
+
+/* line 108, ../../Proyecto Javascript/scss/styles.scss */
+.podio {
+  display: flex;
+}
+
+/* line 110, ../../Proyecto Javascript/scss/styles.scss */
+.podio img {
+  width: 100%;
+}
+
+/* line 115, ../../Proyecto Javascript/scss/styles.scss */
+.siguientes {
+  display: flex;
+}
+
+/* line 117, ../../Proyecto Javascript/scss/styles.scss */
+.siguientes img {
+  width: 100%;
+}
+
+/* line 121, ../../Proyecto Javascript/scss/styles.scss */
+.posicionPoints {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+/* line 126, ../../Proyecto Javascript/scss/styles.scss */
+.piloto {
+  width: 100%;
+}
+
+/* line 130, ../../Proyecto Javascript/scss/styles.scss */
+.flexPiloto {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
