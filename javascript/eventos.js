@@ -549,7 +549,6 @@ generadorCalendario ("Circuito de las Americas", 22)
 
 calendar ()
 
-console.log ("Calendario")
 console.log (calendario)
 
 
