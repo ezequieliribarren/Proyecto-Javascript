@@ -43,16 +43,26 @@ let contrasenia1 = prompt("Ingrese su contraseña");
     
         alert("Lo sentimos, usted ha agotado los intentos de inicio de sesión. Solicite el recupero de usuario y/o contraseña");
     }
+};
+
+function mostrarTablaGral (){
+    console.log ("A continuación les mostramos la tabla de posiciones actual: ")
+    for(const piloto of pilotos){
+        console.log(piloto.piloto);
+        console.log(piloto.posicion);
+    }
+    console.log ("El campeonato tiene un total de " + pilotos.length + " pilotos")
+};
+
+function mostrarTablaConstructora () {
+    console.log ("Mientras tanto en la tabla de posiciones constructora (por equipo) podemos encontrar el siguiente orden:")
+    for(const equipo of equipos){
+        console.log(equipo.equipo);
+        console.log(equipo.posicion);
+    }
+    
+    console.log ("El campeonato tiene un total de " + equipos.length + " equipos")
 }
-
-// Registro
-alert("Registrese para estar al tanto de los ultimos datos de F1.");
-let nombre = prompt("Ingrese su nombre");
-let usuario = prompt("Ingrese su usuario");
-let contrasenia = prompt("Ingrese su contraseña");
-let nacionalidad = prompt("Ingrese su nacionalidad");
-
-alert("Felicitaciones " + nombre + " te has registrado con exito");
 
 // Arrays de objetos
 const pilotos = [
@@ -220,6 +230,7 @@ const pilotos = [
     }
 
 ];
+pilotos.pop ()
 
 const equipos = [
     {
@@ -296,44 +307,264 @@ const equipos = [
     },
 
 ];
+const pistas = [
+    {
+        circuito: "Bahrain International Circuit",
+        vueltas: 57,
 
-pilotos.pop ()
+    },
+    {
+        circuito: "Jeddah",
+        vueltas: 50,
 
-// inicioDeSesion();
+    },
+    {
+        circuito: "Albert Park",
+        vueltas: 58,
+
+    },
+    {
+        circuito: "Autodromo Enzo e Dino Ferrari",
+        vueltas: 63,
+
+    },
+    {
+        circuito: "Autodromo Internacional de Miami",
+        vueltas: 57,
+
+    },
+    {
+        circuito: "Circuit de Barcelona - Catalunya",
+        vueltas: 66,
+
+    },
+    {
+        circuito: "Monte Carlo",
+        vueltas: 78,
+
+    },
+    {
+        circuito: "Baku City Circuit",
+        vueltas: 51,
+
+    },
+    {
+        circuito: "Circuit Gilles Villeneuve",
+        vueltas: 70,
+
+    },
+    {
+        circuito: "Silverstone",
+        vueltas: 52,
+
+    },
+    {
+        circuito: "Red Bull Ring",
+        vueltas: 71,
+
+    },
+    {
+        circuito: "Paul Ricard",
+        vueltas: 53,
+
+    },
+    {
+        circuito: "Hungaroring",
+        vueltas: 70,
+
+    },
+    {
+        circuito: "Spa - Francorchamps",
+        vueltas: 44,
+
+    },
+    {
+        circuito: "Zandvoort",
+        vueltas: 72,
+
+    },
+    {
+        circuito: "Autodromo Nazionale di Monza",
+        vueltas: 53,
+
+    },
+    {
+        circuito: "Marina Bay Circuit",
+        vueltas: 61,
+
+    },
+    {
+        circuito: "Suzuka",
+        vueltas: 53,
+
+    },
+    {
+        circuito: "Circuito de las Americas",
+        vueltas: 56,
+
+    },
+    {
+        circuito: "Interlagos",
+        vueltas: 71,
+
+    },
+    {
+        circuito: "Yas Marina Circuit",
+        vueltas: 58,
+
+    },
+
+    
+
+];
+
+const fechas2022 = [ 
+{
+fecha: new Date (2022, 2, 20)
+},
+{
+fecha: new Date (2022, 2, 27)
+},
+{ 
+fecha: new Date (2022, 3, 10)
+}, 
+{fecha: new Date (2022, 3, 24)
+},
+{fecha: new Date (2022, 4, 8)
+}, 
+{fecha: new Date (2022, 4, 22)
+}, 
+{fecha: new Date (2022, 4, 29)
+}, 
+{fecha: new Date (2022, 5, 12)
+}, 
+{fecha: new Date (2022, 5, 19)
+}, 
+{fecha: new Date (2022,6, 3)
+}, 
+{
+fecha: new Date (2022,6, 10)
+}, 
+{
+fecha: new Date (2022, 6, 24)
+}, 
+{
+fecha: new Date (2022, 6, 31)
+}, 
+{
+fecha: new Date (2022, 7, 28)
+}, 
+{
+fecha: new Date (2022, 8, 4)
+}, 
+{
+ fecha: new Date (2022, 8, 11)
+}, 
+{
+fecha: new Date (2022, 8, 25)
+}, 
+{
+fecha: new Date (2022, 9, 2)
+}, 
+{
+fecha: new Date (2022, 9, 9)
+}, 
+{
+fecha: new Date (2022, 9, 23)
+}, 
+{
+fecha: new Date (2022, 9, 30)
+}, 
+{
+fecha: new Date (2022, 10, 13)
+}, 
+{
+fecha: new Date (2022, 10, 30)
+}
+];
+
+let calendario = [];
 
 
-console.log ("A continuación les mostramos la tabla de posiciones actual: ")
-for(const piloto of pilotos){
-    console.log(piloto.piloto);
-    console.log(piloto.posicion);
+// Registro
+alert("Registrese para estar al tanto de los ultimos datos de F1.");
+let nombre = prompt("Ingrese su nombre");
+let usuario = prompt("Ingrese su usuario");
+let contrasenia = prompt("Ingrese su contraseña");
+let nacionalidad = prompt("Ingrese su nacionalidad");
+
+alert("Felicitaciones " + nombre + " te has registrado con exito");
+
+inicioDeSesion();
+
+
+// Informacion de la pagina
+mostrarTablaGral();
+mostrarTablaConstructora();
+
+
+// Solo circuitos (MAP)
+const soloCircuitos = pistas.map((el) => el.circuito)
+
+// Datos sobre el piloto favorito (FIND)
+
+const soloPilotos = pilotos.map ((el)=> el.piloto.toLowerCase)
+
+let datosPiloto = prompt("Para saber mas datos sobre su piloto favorito ingrese su nombre completo");
+
+datosPiloto.toLowerCase
+
+let resultado = pilotos.find((el) => el.piloto === datosPiloto)
+
+    console.log (resultado)
+
+
+// Generacion de calendario (CLASS - INDEXOF - PUSH - FUNCION CON PARAMETROS)
+class evento {
+    constructor( circuito, fecha) {
+        this.circuito  = circuito
+        this.fecha = fecha
+    }
 }
 
-console.log ("El campeonato tiene un total de " + pilotos.length + " pilotos")
+function generadorCalendario (circ,ubFecha) {
 
-console.log ("Mientras tanto en la tabla de posiciones constructora (por equipo) podemos encontrar el siguiente orden:")
-for(const equipo of equipos){
-    console.log(equipo.equipo);
-    console.log(equipo.posicion);
+    calendario.push(new evento (pistas [soloCircuitos.indexOf(circ)], fechas2022 [ubFecha] ));
 }
 
-console.log ("El campeonato tiene un total de " + equipos.length + " equipos")
+function calendar () {
+    generadorCalendario ("Bahrain International Circuit", 0)
+generadorCalendario ("Jeddah", 1)
+generadorCalendario ("Albert Park", 2)
+generadorCalendario ("Autodromo Enzo e Dino Ferrari", 3)
+generadorCalendario ("Autodromo Internacional de Miami", 4)
+generadorCalendario ("Circuit de Barcelona - Catalunya", 5)
+generadorCalendario ("Monte Carlo", 6)
+generadorCalendario ("Baku City Circuit", 7)
+generadorCalendario ("Circuit Gilles Villeneuve", 8)
+generadorCalendario ("Silverstone", 9)
+generadorCalendario ("Red Bull Ring", 10)
+generadorCalendario ("Paul Ricard", 11)
+generadorCalendario ("Hungaroring", 12)
+generadorCalendario ("Spa - Francorchamps", 13)
+generadorCalendario ("Zandvoort", 14)
+generadorCalendario ("Autodromo Nazionale di Monza", 15)
+generadorCalendario ("Circuito de las Americas", 16)
+generadorCalendario ("Marina Bay Circuit", 17)
+generadorCalendario ("Suzuka", 18)
+generadorCalendario ("Circuito de las Americas", 19)
+generadorCalendario ("Interlagos", 20)
+generadorCalendario ("Yas Marina Circuit", 21)
+generadorCalendario ("Circuito de las Americas", 22)
 
-const pistas = ["España", "Hungria", "Alemania"];
-
-const calendario = [];
-
-function generar (pista){
-    let resultado = pistas.find((el) => el === pista)
-    if(resultado=true) {
-        calendario.push (pista)}
 
 }
 
-generar ("España")
-generar ("Alemania")
+calendar ()
 
-
-
-
+console.log ("Calendario")
 console.log (calendario)
+
+
+
 
