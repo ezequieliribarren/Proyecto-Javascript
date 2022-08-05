@@ -506,19 +506,6 @@ mostrarTablaConstructora();
 // Solo circuitos (MAP)
 const soloCircuitos = pistas.map((el) => el.circuito)
 
-// Datos sobre el piloto favorito (FIND)
-
-const soloPilotos = pilotos.map ((el)=> el.piloto.toLowerCase)
-
-let datosPiloto = prompt("Para saber mas datos sobre su piloto favorito ingrese su nombre completo");
-
-datosPiloto.toLowerCase
-
-let resultado = pilotos.find((el) => el.piloto === datosPiloto)
-
-    console.log (resultado)
-
-
 // Generacion de calendario (CLASS - INDEXOF - PUSH - FUNCION CON PARAMETROS)
 class evento {
     constructor( circuito, fecha) {
