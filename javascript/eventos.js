@@ -414,13 +414,19 @@ const pistas = [
 
     },
 
+    {
+        circuito: "Hermanos Rodriguez",
+        vueltas: 71,
+
+    },
+
     
 
 ];
 
 const fechas2022 = [ 
 {
-fecha: new Date (2022, 2, 20)
+fecha: new Date (2022, 2, 20) 
 },
 {
 fecha: new Date (2022, 2, 27)
@@ -461,9 +467,6 @@ fecha: new Date (2022, 8, 4)
  fecha: new Date (2022, 8, 11)
 }, 
 {
-fecha: new Date (2022, 8, 25)
-}, 
-{
 fecha: new Date (2022, 9, 2)
 }, 
 {
@@ -479,28 +482,28 @@ fecha: new Date (2022, 9, 30)
 fecha: new Date (2022, 10, 13)
 }, 
 {
-fecha: new Date (2022, 10, 30)
+fecha: new Date (2022, 10, 20)
 }
 ];
 
 let calendario = [];
 
 
-// Registro
-alert("Registrese para estar al tanto de los ultimos datos de F1.");
-let nombre = prompt("Ingrese su nombre");
-let usuario = prompt("Ingrese su usuario");
-let contrasenia = prompt("Ingrese su contraseña");
-let nacionalidad = prompt("Ingrese su nacionalidad");
+// // Registro
+// alert("Registrese para estar al tanto de los ultimos datos de F1.");
+// let nombre = prompt("Ingrese su nombre");
+// let usuario = prompt("Ingrese su usuario");
+// let contrasenia = prompt("Ingrese su contraseña");
+// let nacionalidad = prompt("Ingrese su nacionalidad");
 
-alert("Felicitaciones " + nombre + " te has registrado con exito");
+// alert("Felicitaciones " + nombre + " te has registrado con exito");
 
-inicioDeSesion();
+// inicioDeSesion();
 
 
-// Informacion de la pagina
-mostrarTablaGral();
-mostrarTablaConstructora();
+// // Informacion de la pagina
+// mostrarTablaGral();
+// mostrarTablaConstructora();
 
 
 // Solo circuitos (MAP)
@@ -520,7 +523,7 @@ function generadorCalendario (circ,ubFecha) {
 }
 
 function calendar () {
-    generadorCalendario ("Bahrain International Circuit", 0)
+generadorCalendario ("Bahrain International Circuit", 0)
 generadorCalendario ("Jeddah", 1)
 generadorCalendario ("Albert Park", 2)
 generadorCalendario ("Autodromo Enzo e Dino Ferrari", 3)
@@ -536,20 +539,140 @@ generadorCalendario ("Hungaroring", 12)
 generadorCalendario ("Spa - Francorchamps", 13)
 generadorCalendario ("Zandvoort", 14)
 generadorCalendario ("Autodromo Nazionale di Monza", 15)
-generadorCalendario ("Circuito de las Americas", 16)
-generadorCalendario ("Marina Bay Circuit", 17)
-generadorCalendario ("Suzuka", 18)
-generadorCalendario ("Circuito de las Americas", 19)
+generadorCalendario ("Marina Bay Circuit", 16)
+generadorCalendario ("Suzuka", 17)
+generadorCalendario ("Circuito de las Americas", 18)
+generadorCalendario ("Hermanos Rodriguez", 19)
 generadorCalendario ("Interlagos", 20)
 generadorCalendario ("Yas Marina Circuit", 21)
-generadorCalendario ("Circuito de las Americas", 22)
-
-
 }
 
 calendar ()
-
 console.log (calendario)
+
+
+// Interactuando con html (Agregando informacion a los eventos queryselectorAll)
+let contEventos = document.querySelectorAll ('.evento')
+contEventos[0].innerHTML = `<h4> Circuito: ${calendario[0].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[0].fecha.fecha} </h4>`; 
+
+contEventos[1].innerHTML = `<h4> Circuito: ${calendario[1].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[1].fecha.fecha} </h4>`; 
+
+contEventos[2].innerHTML = `<h4> Circuito: ${calendario[2].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[2].fecha.fecha} </h4>`; 
+
+contEventos[3].innerHTML = `<h4> Circuito: ${calendario[3].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[3].fecha.fecha} </h4>`; 
+
+contEventos[4].innerHTML = `<h4> Circuito: ${calendario[4].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[4].fecha.fecha} </h4>`; 
+
+contEventos[5].innerHTML = `<h4> Circuito: ${calendario[5].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[5].fecha.fecha} </h4>`; 
+
+contEventos[6].innerHTML = `<h4> Circuito: ${calendario[6].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[6].fecha.fecha} </h4>`; 
+
+contEventos[7].innerHTML = `<h4> Circuito: ${calendario[7].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[7].fecha.fecha} </h4>`; 
+
+contEventos[8].innerHTML = `<h4> Circuito: ${calendario[8].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[8].fecha.fecha} </h4>`; 
+
+contEventos[9].innerHTML = `<h4> Circuito: ${calendario[9].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[9].fecha.fecha} </h4>`; 
+
+contEventos[10].innerHTML = `<h4> Circuito: ${calendario[10].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[10].fecha.fecha} </h4>`; 
+
+contEventos[11].innerHTML = `<h4> Circuito: ${calendario[11].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[11].fecha.fecha} </h4>`; 
+
+contEventos[12].innerHTML = `<h4> Circuito: ${calendario[12].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[12].fecha.fecha} </h4>`; 
+
+contEventos[13].innerHTML = `<h4> Circuito: ${calendario[13].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[13].fecha.fecha} </h4>`; 
+
+contEventos[14].innerHTML = `<h4> Circuito: ${calendario[14].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[14].fecha.fecha} </h4>`; 
+
+contEventos[15].innerHTML = `<h4> Circuito: ${calendario[15].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[15].fecha.fecha} </h4>`; 
+
+contEventos[16].innerHTML = `<h4> Circuito: ${calendario[16].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[16].fecha.fecha} </h4>`; 
+
+contEventos[17].innerHTML = `<h4> Circuito: ${calendario[17].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[17].fecha.fecha} </h4>`; 
+
+contEventos[18].innerHTML = `<h4> Circuito: ${calendario[18].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[18].fecha.fecha} </h4>`; 
+
+contEventos[19].innerHTML = `<h4> Circuito: ${calendario[19].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[19].fecha.fecha} </h4>`; 
+
+contEventos[20].innerHTML = `<h4> Circuito: ${calendario[20].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[20].fecha.fecha} </h4>`; 
+
+contEventos[21].innerHTML = `<h4> Circuito: ${calendario[21].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[21].fecha.fecha} </h4>`; 
+
+
+
+
+// Agregando Informacion de Pilotos 
+
+// Nombre del piloto
+let selectPiloto = document.querySelectorAll ('.piloto')
+selectPiloto [0].innerHTML = `<h4>  ${pilotos [0].piloto} </h4>` 
+selectPiloto [1].innerHTML = `<h4>  ${pilotos [1].piloto} </h4>` 
+selectPiloto [2].innerHTML = `<h4>  ${pilotos [2].piloto} </h4>` 
+selectPiloto [3].innerHTML = `<h4>  ${pilotos [3].piloto} </h4>` 
+selectPiloto [4].innerHTML = `<h4>  ${pilotos [4].piloto} </h4>` 
+selectPiloto [5].innerHTML = `<h4>  ${pilotos [5].piloto} </h4>` 
+selectPiloto [6].innerHTML = `<h4>  ${pilotos [6].piloto} </h4>` 
+selectPiloto [7].innerHTML = `<h4>  ${pilotos [7].piloto} </h4>` 
+selectPiloto [8].innerHTML = `<h4>  ${pilotos [8].piloto} </h4>` 
+selectPiloto [9].innerHTML = `<h4>  ${pilotos [9].piloto} </h4>` 
+selectPiloto [10].innerHTML = `<h4>  ${pilotos [10].piloto} </h4>` 
+selectPiloto [11].innerHTML = `<h4>  ${pilotos [11].piloto} </h4>` 
+selectPiloto [12].innerHTML = `<h4>  ${pilotos [12].piloto} </h4>` 
+selectPiloto [13].innerHTML = `<h4>  ${pilotos [13].piloto} </h4>` 
+selectPiloto [14].innerHTML = `<h4>  ${pilotos [14].piloto} </h4>` 
+selectPiloto [15].innerHTML = `<h4>  ${pilotos [15].piloto} </h4>` 
+selectPiloto [16].innerHTML = `<h4>  ${pilotos [16].piloto} </h4>` 
+selectPiloto [17].innerHTML = `<h4>  ${pilotos [17].piloto} </h4>` 
+selectPiloto [18].innerHTML = `<h4>  ${pilotos [18].piloto} </h4>` 
+selectPiloto [19].innerHTML = `<h4>  ${pilotos [19].piloto} </h4>` 
+selectPiloto [20].innerHTML = `<h4>  ${pilotos [20].piloto} </h4>` 
+
+// Puntos del Piloto
+let posicionPoint = document.querySelectorAll ('.posicionPoints')
+posicionPoint[0].innerHTML= `<h4> Puntos: ${pilotos [0].puntos} </h4>` 
+posicionPoint[1].innerHTML= `<h4> Puntos: ${pilotos [1].puntos} </h4>` 
+posicionPoint[2].innerHTML= `<h4> Puntos: ${pilotos [2].puntos} </h4>` 
+posicionPoint[3].innerHTML= `<h4> Puntos: ${pilotos [3].puntos} </h4>` 
+posicionPoint[5].innerHTML= `<h4> Puntos: ${pilotos [4].puntos} </h4>` 
+posicionPoint[4].innerHTML= `<h4> Puntos: ${pilotos [5].puntos} </h4>` 
+posicionPoint[6].innerHTML= `<h4> Puntos: ${pilotos [6].puntos} </h4>` 
+posicionPoint[7].innerHTML= `<h4> Puntos: ${pilotos [7].puntos} </h4>` 
+posicionPoint[8].innerHTML= `<h4> Puntos: ${pilotos [8].puntos} </h4>` 
+posicionPoint[9].innerHTML= `<h4> Puntos: ${pilotos [9].puntos} </h4>` 
+posicionPoint[10].innerHTML= `<h4> Puntos: ${pilotos [10].puntos} </h4>` 
+posicionPoint[11].innerHTML= `<h4> Puntos: ${pilotos [11].puntos} </h4>` 
+posicionPoint[12].innerHTML= `<h4> Puntos: ${pilotos [12].puntos} </h4>` 
+posicionPoint[13].innerHTML= `<h4> Puntos: ${pilotos [13].puntos} </h4>` 
+posicionPoint[14].innerHTML= `<h4> Puntos: ${pilotos [14].puntos} </h4>` 
+posicionPoint[15].innerHTML= `<h4> Puntos: ${pilotos [15].puntos} </h4>` 
+posicionPoint[16].innerHTML= `<h4> Puntos: ${pilotos [16].puntos} </h4>` 
+posicionPoint[17].innerHTML= `<h4> Puntos: ${pilotos [17].puntos} </h4>` 
+posicionPoint[18].innerHTML= `<h4> Puntos: ${pilotos [18].puntos} </h4>` 
+posicionPoint[19].innerHTML= `<h4> Puntos: ${pilotos [19].puntos} </h4>` 
+posicionPoint[20].innerHTML= `<h4> Puntos: ${pilotos [20].puntos} </h4>` 
+
+let posicion = document.querySelectorAll ('.posicion')
+posicion[0].innerHTML= `<h4> Posición: ${pilotos [0].posicion} </h4>` 
+posicion[1].innerHTML= `<h4> Posición: ${pilotos [1].posicion} </h4>` 
+posicion[2].innerHTML= `<h4> Posición: ${pilotos [2].posicion} </h4>` 
+posicion[3].innerHTML= `<h4> Posición: ${pilotos [3].posicion} </h4>` 
+posicion[5].innerHTML= `<h4> Posición: ${pilotos [4].posicion} </h4>` 
+posicion[4].innerHTML= `<h4> Posición: ${pilotos [5].posicion} </h4>` 
+posicion[6].innerHTML= `<h4> Posición: ${pilotos [6].posicion} </h4>` 
+posicion[7].innerHTML= `<h4> Posición: ${pilotos [7].posicion} </h4>` 
+posicion[8].innerHTML= `<h4> Posición: ${pilotos [8].posicion} </h4>` 
+posicion[9].innerHTML= `<h4> Posición: ${pilotos [9].posicion} </h4>` 
+posicion[10].innerHTML= `<h4> Posición: ${pilotos [10].posicion} </h4>` 
+posicion[11].innerHTML= `<h4> Posición: ${pilotos [11].posicion} </h4>` 
+posicion[12].innerHTML= `<h4> Posición: ${pilotos [12].posicion} </h4>` 
+posicion[13].innerHTML= `<h4> Posición: ${pilotos [13].posicion} </h4>` 
+posicion[14].innerHTML= `<h4> Posición: ${pilotos [14].posicion} </h4>` 
+posicion[15].innerHTML= `<h4> Posición: ${pilotos [15].posicion} </h4>` 
+posicion[16].innerHTML= `<h4> Posición: ${pilotos [16].posicion} </h4>` 
+posicion[17].innerHTML= `<h4> Posición: ${pilotos [17].posicion} </h4>` 
+posicion[18].innerHTML= `<h4> Posición: ${pilotos [18].posicion} </h4>` 
+posicion[19].innerHTML= `<h4> Posición: ${pilotos [19].posicion} </h4>` 
+posicion[20].innerHTML= `<h4> Posición: ${pilotos [20].posicion} </h4>` 
+
 
 
 
