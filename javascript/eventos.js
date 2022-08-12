@@ -426,67 +426,68 @@ const pistas = [
 
 const fechas2022 = [ 
 {
-fecha: new Date (2022, 2, 20) 
+fecha: new Date (2022, 2, 20,10)
 },
 {
-fecha: new Date (2022, 2, 27)
+fecha: new Date (2022, 2, 27,10)
 },
 { 
-fecha: new Date (2022, 3, 10)
+fecha: new Date (2022, 3, 10,10)
 }, 
-{fecha: new Date (2022, 3, 24)
+{fecha: new Date (2022, 3, 24,10)
 },
-{fecha: new Date (2022, 4, 8)
+{fecha: new Date (2022, 4, 8,10)
 }, 
-{fecha: new Date (2022, 4, 22)
+{fecha: new Date (2022, 4, 22,10)
 }, 
-{fecha: new Date (2022, 4, 29)
+{fecha: new Date (2022, 4, 29,10)
 }, 
-{fecha: new Date (2022, 5, 12)
+{fecha: new Date (2022, 5, 12,10)
 }, 
-{fecha: new Date (2022, 5, 19)
+{fecha: new Date (2022, 5, 19,10)
 }, 
-{fecha: new Date (2022,6, 3)
-}, 
-{
-fecha: new Date (2022,6, 10)
+{fecha: new Date (2022,6, 3,10)
 }, 
 {
-fecha: new Date (2022, 6, 24)
+fecha: new Date (2022,6, 10,10)
 }, 
 {
-fecha: new Date (2022, 6, 31)
+fecha: new Date (2022, 6, 24,10)
 }, 
 {
-fecha: new Date (2022, 7, 28)
+fecha: new Date (2022, 6, 31,10)
 }, 
 {
-fecha: new Date (2022, 8, 4)
+fecha: new Date (2022, 7, 28,10)
 }, 
 {
- fecha: new Date (2022, 8, 11)
+fecha: new Date (2022, 8, 4,10)
 }, 
 {
-fecha: new Date (2022, 9, 2)
+ fecha: new Date (2022, 8, 11,10)
 }, 
 {
-fecha: new Date (2022, 9, 9)
+fecha: new Date (2022, 9, 2,10)
 }, 
 {
-fecha: new Date (2022, 9, 23)
+fecha: new Date (2022, 9, 9,10)
 }, 
 {
-fecha: new Date (2022, 9, 30)
+fecha: new Date (2022, 9, 23,10)
 }, 
 {
-fecha: new Date (2022, 10, 13)
+fecha: new Date (2022, 9, 30,10)
 }, 
 {
-fecha: new Date (2022, 10, 20)
+fecha: new Date (2022, 10, 13,10)
+}, 
+{
+fecha: new Date (2022, 10, 20,10)
 }
 ];
 
-let calendario = [];
+const calendario = []
+
 
 
 // // Registro
@@ -548,55 +549,99 @@ generadorCalendario ("Yas Marina Circuit", 21)
 }
 
 calendar ()
-console.log (calendario)
+
+// Mejorando Fechas
+let fecha1 = new Date (2022, 2, 20,10)
+let fe1 = fecha1.getDate () + "/" + fecha1.getMonth () + "/" + fecha1.getFullYear () + " " + fecha1.getHours () + ":" + fecha1.getMinutes () + fecha1.getSeconds () + " hs. (Argentina)";
+let fecha2 = new Date (2022, 2, 27,11)
+let fe2 = fecha2.getDate () + "/" + fecha2.getMonth () + "/" + fecha2.getFullYear () + " " + fecha2.getHours () + ":" + fecha2.getMinutes () + fecha2.getSeconds () + " hs. (Argentina)";
+let fecha3 = new Date (2022, 3, 10,12)
+let fe3 = fecha3.getDate () + "/" + fecha3.getMonth () + "/" + fecha3.getFullYear () + " " + fecha3.getHours () + ":" + fecha3.getMinutes () + fecha3.getSeconds () + " hs. (Argentina)";
+let fecha4 = new Date (2022, 3, 24,10)
+let fe4 = fecha4.getDate () + "/" + fecha4.getMonth () + "/" + fecha4.getFullYear () + " " + fecha4.getHours () + ":" + fecha4.getMinutes () + fecha4.getSeconds () + " hs. (Argentina)";
+let fecha5 = new Date (2022, 4, 8,11)
+let fe5 = fecha5.getDate () + "/" + fecha5.getMonth () + "/" + fecha5.getFullYear () + " " + fecha5.getHours () + ":" + fecha5.getMinutes () + fecha5.getSeconds () + " hs. (Argentina)";
+let fecha6 = new Date (2022, 4, 29,10)
+let fe6 = fecha6.getDate () + "/" + fecha6.getMonth () + "/" + fecha6.getFullYear ()+ " " + fecha6.getHours () + ":" + fecha6.getMinutes () + fecha6.getSeconds () + " hs. (Argentina)";
+let fecha7 = new Date (2022, 5, 12,11)
+let fe7 = fecha7.getDate () + "/" + fecha7.getMonth () + "/" + fecha7.getFullYear () + " " + fecha7.getHours () + ":" + fecha7.getMinutes () + fecha7.getSeconds () + " hs. (Argentina)"; 
+let fecha8 = new Date (2022, 5, 19,12)
+let fe8 = fecha8.getDate () + "/" + fecha8.getMonth () + "/" + fecha8.getFullYear () + " " + fecha8.getHours () + ":" + fecha8.getMinutes () + fecha8.getSeconds () + " hs. (Argentina)";
+let fecha9 = new Date (2022,6, 3,10)
+let fe9 = fecha9.getDate () + "/" + fecha9.getMonth () + "/" + fecha9.getFullYear () + " " + fecha9.getHours () + ":" + fecha9.getMinutes () + fecha9.getSeconds () + " hs. (Argentina)";
+let fecha10 = new Date (2022,6, 10,11)
+let fe10 = fecha10.getDate () + "/" + fecha10.getMonth () + "/" + fecha10.getFullYear () + " " + fecha10.getHours () + ":" + fecha10.getMinutes () + fecha10.getSeconds () + " hs. (Argentina)";
+let fecha11 = new Date (2022, 6, 24,12)
+let fe11 = fecha11.getDate () + "/" + fecha11.getMonth () + "/" + fecha11.getFullYear () + " " + fecha11.getHours () + ":" + fecha11.getMinutes () + fecha11.getSeconds () + " hs. (Argentina)";
+let fecha12 = new Date (2022, 6, 31,10)
+let fe12 = fecha12.getDate () + "/" + fecha12.getMonth () + "/" + fecha12.getFullYear () + " " + fecha12.getHours () + ":" + fecha12.getMinutes () + fecha12.getSeconds () + " hs. (Argentina)";
+let fecha13 = new Date (2022, 7, 28,11)
+let fe13 = fecha13.getDate () + "/" + fecha13.getMonth () + "/" + fecha13.getFullYear () + " " + fecha13.getHours () + ":" + fecha13.getMinutes () + fecha13.getSeconds () + " hs. (Argentina)";
+let fecha14 = new Date (2022, 8, 4,12)
+let fe14 = fecha14.getDate () + "/" + fecha14.getMonth () + "/" + fecha14.getFullYear () + " " + fecha14.getHours () + ":" + fecha14.getMinutes () + fecha14.getSeconds () + " hs. (Argentina)";
+let fecha15 = new Date (2022, 8, 11,10)
+let fe15 = fecha15.getDate () + "/" + fecha15.getMonth () + "/" + fecha15.getFullYear () + " " + fecha15.getHours () + ":" + fecha15.getMinutes () + fecha15.getSeconds () + " hs. (Argentina)";
+let fecha16 = new Date (2022, 9, 2,11)
+let fe16 = fecha16.getDate () + "/" + fecha16.getMonth () + "/" + fecha16.getFullYear () + " " + fecha16.getHours () + ":" + fecha16.getMinutes () + fecha16.getSeconds () + " hs. (Argentina)";
+let fecha17 = new Date (2022, 9, 9,12)
+let fe17 = fecha17.getDate () + "/" + fecha17.getMonth () + "/" + fecha17.getFullYear () + " " + fecha17.getHours () + ":" + fecha17.getMinutes () + fecha17.getSeconds () + " hs. (Argentina)";
+let fecha18 = new Date (2022, 9, 23,10)
+let fe18 = fecha18.getDate () + "/" + fecha18.getMonth () + "/" + fecha18.getFullYear () + " " + fecha18.getHours () + ":" + fecha18.getMinutes () + fecha18.getSeconds () + " hs. (Argentina)";
+let fecha19 = new Date (2022, 9, 30,11)
+let fe19 = fecha19.getDate () + "/" + fecha19.getMonth () + "/" + fecha19.getFullYear () + " " + fecha19.getHours () + ":" + fecha19.getMinutes () + fecha19.getSeconds () + " hs. (Argentina)";
+let fecha20 = new Date (2022, 10, 13,12)
+let fe20 = fecha20.getDate () + "/" + fecha20.getMonth () + "/" + fecha20.getFullYear () + " " + fecha20.getHours () + ":" + fecha20.getMinutes () + fecha20.getSeconds () + " hs. (Argentina)";
+let fecha21 = new Date (2022, 10, 20,10)
+let fe21 = fecha21.getDate () + "/" + fecha21.getMonth () + "/" + fecha21.getFullYear () + " " + fecha21.getHours () + ":" + fecha21.getMinutes () + fecha21.getSeconds () + " hs. (Argentina)";
+let fecha22 = new Date (2022, 4, 22,12)
+let fe22 = fecha22.getDate () + "/" + fecha22.getMonth () + "/" + fecha22.getFullYear () + " " + fecha22.getHours () + ":" + fecha22.getMinutes () + fecha22.getSeconds () + " hs. (Argentina)";
 
 
 // Interactuando con html (Agregando informacion a los eventos queryselectorAll)
 let contEventos = document.querySelectorAll ('.evento')
-contEventos[0].innerHTML = `<h4> Circuito: ${calendario[0].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[0].fecha.fecha} </h4>`; 
+contEventos[0].innerHTML = `<h4> Circuito: ${calendario[0].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe1} </h4>`; 
 
-contEventos[1].innerHTML = `<h4> Circuito: ${calendario[1].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[1].fecha.fecha} </h4>`; 
+contEventos[1].innerHTML = `<h4> Circuito: ${calendario[1].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe2} </h4>`; 
 
-contEventos[2].innerHTML = `<h4> Circuito: ${calendario[2].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[2].fecha.fecha} </h4>`; 
+contEventos[2].innerHTML = `<h4> Circuito: ${calendario[2].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe3} </h4>`; 
 
-contEventos[3].innerHTML = `<h4> Circuito: ${calendario[3].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[3].fecha.fecha} </h4>`; 
+contEventos[3].innerHTML = `<h4> Circuito: ${calendario[3].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe4} </h4>`; 
 
-contEventos[4].innerHTML = `<h4> Circuito: ${calendario[4].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[4].fecha.fecha} </h4>`; 
+contEventos[4].innerHTML = `<h4> Circuito: ${calendario[4].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe5} </h4>`; 
 
-contEventos[5].innerHTML = `<h4> Circuito: ${calendario[5].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[5].fecha.fecha} </h4>`; 
+contEventos[5].innerHTML = `<h4> Circuito: ${calendario[5].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe22} </h4>`; 
 
-contEventos[6].innerHTML = `<h4> Circuito: ${calendario[6].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[6].fecha.fecha} </h4>`; 
+contEventos[6].innerHTML = `<h4> Circuito: ${calendario[6].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe6} </h4>`; 
 
-contEventos[7].innerHTML = `<h4> Circuito: ${calendario[7].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[7].fecha.fecha} </h4>`; 
+contEventos[7].innerHTML = `<h4> Circuito: ${calendario[7].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe7} </h4>`; 
 
-contEventos[8].innerHTML = `<h4> Circuito: ${calendario[8].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[8].fecha.fecha} </h4>`; 
+contEventos[8].innerHTML = `<h4> Circuito: ${calendario[8].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe8} </h4>`; 
 
-contEventos[9].innerHTML = `<h4> Circuito: ${calendario[9].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[9].fecha.fecha} </h4>`; 
+contEventos[9].innerHTML = `<h4> Circuito: ${calendario[9].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe9} </h4>`; 
 
-contEventos[10].innerHTML = `<h4> Circuito: ${calendario[10].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[10].fecha.fecha} </h4>`; 
+contEventos[10].innerHTML = `<h4> Circuito: ${calendario[10].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe10} </h4>`; 
 
-contEventos[11].innerHTML = `<h4> Circuito: ${calendario[11].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[11].fecha.fecha} </h4>`; 
+contEventos[11].innerHTML = `<h4> Circuito: ${calendario[11].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe11} </h4>`; 
 
-contEventos[12].innerHTML = `<h4> Circuito: ${calendario[12].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[12].fecha.fecha} </h4>`; 
+contEventos[12].innerHTML = `<h4> Circuito: ${calendario[12].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe12} </h4>`; 
 
-contEventos[13].innerHTML = `<h4> Circuito: ${calendario[13].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[13].fecha.fecha} </h4>`; 
+contEventos[13].innerHTML = `<h4> Circuito: ${calendario[13].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe13} </h4>`; 
 
-contEventos[14].innerHTML = `<h4> Circuito: ${calendario[14].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[14].fecha.fecha} </h4>`; 
+contEventos[14].innerHTML = `<h4> Circuito: ${calendario[14].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe14} </h4>`; 
 
-contEventos[15].innerHTML = `<h4> Circuito: ${calendario[15].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[15].fecha.fecha} </h4>`; 
+contEventos[15].innerHTML = `<h4> Circuito: ${calendario[15].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe15} </h4>`; 
 
-contEventos[16].innerHTML = `<h4> Circuito: ${calendario[16].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[16].fecha.fecha} </h4>`; 
+contEventos[16].innerHTML = `<h4> Circuito: ${calendario[16].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe16} </h4>`; 
 
-contEventos[17].innerHTML = `<h4> Circuito: ${calendario[17].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[17].fecha.fecha} </h4>`; 
+contEventos[17].innerHTML = `<h4> Circuito: ${calendario[17].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe17} </h4>`; 
 
-contEventos[18].innerHTML = `<h4> Circuito: ${calendario[18].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[18].fecha.fecha} </h4>`; 
+contEventos[18].innerHTML = `<h4> Circuito: ${calendario[18].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe18} </h4>`; 
 
-contEventos[19].innerHTML = `<h4> Circuito: ${calendario[19].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[19].fecha.fecha} </h4>`; 
+contEventos[19].innerHTML = `<h4> Circuito: ${calendario[19].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe19} </h4>`; 
 
-contEventos[20].innerHTML = `<h4> Circuito: ${calendario[20].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[20].fecha.fecha} </h4>`; 
+contEventos[20].innerHTML = `<h4> Circuito: ${calendario[20].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe20} </h4>`; 
 
-contEventos[21].innerHTML = `<h4> Circuito: ${calendario[21].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${calendario[21].fecha.fecha} </h4>`; 
-
+contEventos[21].innerHTML = `<h4> Circuito: ${calendario[21].circuito.circuito} </h4>` + `<h4> Dia y Horario: ${fe21} </h4>`; 
 
 
 
@@ -650,6 +695,7 @@ posicionPoint[18].innerHTML= `<h4> Puntos: ${pilotos [18].puntos} </h4>`
 posicionPoint[19].innerHTML= `<h4> Puntos: ${pilotos [19].puntos} </h4>` 
 posicionPoint[20].innerHTML= `<h4> Puntos: ${pilotos [20].puntos} </h4>` 
 
+// Posicion del piloto
 let posicion = document.querySelectorAll ('.posicion')
 posicion[0].innerHTML= `<h4> Posición: ${pilotos [0].posicion} </h4>` 
 posicion[1].innerHTML= `<h4> Posición: ${pilotos [1].posicion} </h4>` 
@@ -674,6 +720,84 @@ posicion[19].innerHTML= `<h4> Posición: ${pilotos [19].posicion} </h4>`
 posicion[20].innerHTML= `<h4> Posición: ${pilotos [20].posicion} </h4>` 
 
 
+// Eventos
+
+const mexicoEeuu = [
+    {
+        horario : document.querySelector ('.imgEvento1')
+    },
+    {
+        horario : document.querySelector ('.imgEvento2')
+    },
+    {
+        horario : document.querySelector ('.imgEvento3')
+    },
+    {
+        horario : document.querySelector ('.imgEvento4')
+    },
+    {
+        horario : document.querySelector ('.imgEvento5')
+    },
+    {
+        horario : document.querySelector ('.imgEvento6')
+    },
+    {
+        horario : document.querySelector ('.imgEvento7')
+    },
+    {
+        horario : document.querySelector ('.imgEvento8')
+    },
+    {
+        horario : document.querySelector ('.imgEvento9')
+    },
+    {
+        horario : document.querySelector ('.imgEvento10')
+    },
+    {
+        horario : document.querySelector ('.imgEvento11')
+    },
+    {
+        horario : document.querySelector ('.imgEvento12')
+    },
+    {
+        horario : document.querySelector ('.imgEvento13')
+    },
+    {
+        horario : document.querySelector ('.imgEvento14')
+    },
+    {
+        horario : document.querySelector ('.imgEvento15')
+    },
+    {
+        horario : document.querySelector ('.imgEvento16')
+    },
+    {
+        horario : document.querySelector ('.imgEvento17')
+    },
+    {
+        horario : document.querySelector ('.imgEvento18')
+    },
+    {
+        horario : document.querySelector ('.imgEvento19')
+    },
+    {
+        horario : document.querySelector ('.imgEvento20')
+    },
+    {
+        horario : document.querySelector ('.imgEvento21')
+    },
+    {
+        horario : document.querySelector ('.imgEvento22')
+    },
+
+];
 
 
+for (const h of mexicoEeuu) {
+    let horario = h.horario
+    horario.onclick = () => {
+    alert ("Horario Mexico: " + parseInt(fecha1.getHours ()  - 1) +":00 hs" + "\n" + "Horario Estados Unidos: " + parseInt(fecha1.getHours ()  - 2) + ":00 hs")
+
+};
+}
 
