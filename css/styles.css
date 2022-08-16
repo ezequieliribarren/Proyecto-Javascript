@@ -85,69 +85,68 @@ header {
 }
 
 /* line 94, ../../Proyecto Javascript/scss/styles.scss */
-.tandaEventos {
-  margin-top: 2rem;
+.schedule1, .schedule2, .schedule3, .schedule4, .schedule5, .schedule6 {
   display: flex;
+  margin: 4rem;
 }
 
-/* line 98, ../../Proyecto Javascript/scss/styles.scss */
-.tandaEventos img {
-  width: 100%;
+/* line 97, ../../Proyecto Javascript/scss/styles.scss */
+.schedule1 img, .schedule2 img, .schedule3 img, .schedule4 img, .schedule5 img, .schedule6 img {
+  width: 32rem;
+  padding: 1rem;
+  margin-bottom: 8rem;
 }
 
 /* line 104, ../../Proyecto Javascript/scss/styles.scss */
-.evento {
-  width: 100%;
-}
-
-/* line 108, ../../Proyecto Javascript/scss/styles.scss */
-.cardEvento {
-  width: 100%;
-  margin: 2rem;
-}
-
-/* line 117, ../../Proyecto Javascript/scss/styles.scss */
-.podio {
+.flexCircFecha {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
 }
 
-/* line 119, ../../Proyecto Javascript/scss/styles.scss */
-.podio img {
-  width: 45rem;
-  padding: 0.5rem;
-}
-
-/* line 125, ../../Proyecto Javascript/scss/styles.scss */
-.siguientes {
-  display: flex;
-}
-
-/* line 127, ../../Proyecto Javascript/scss/styles.scss */
-.siguientes img {
-  width: 27rem;
-  padding: 0.5rem;
-}
-
-/* line 133, ../../Proyecto Javascript/scss/styles.scss */
-.posicionYPuntaje {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-}
-
-/* line 142, ../../Proyecto Javascript/scss/styles.scss */
-.piloto {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 147, ../../Proyecto Javascript/scss/styles.scss */
-.flexPiloto {
+/* line 113, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos1, .pilotos2, .pilotos3, .pilotos4, .pilotos5 {
   display: flex;
   justify-content: center;
+}
+
+/* line 116, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos1 img, .pilotos2 img, .pilotos3 img, .pilotos4 img, .pilotos5 img {
+  width: 100%;
+  padding: 0.7rem;
+}
+
+/* line 121, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos5 {
+  display: flex;
+}
+
+/* line 122, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos5 div {
+  width: 26rem;
+}
+
+/* line 126, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos5 img {
+  width: 100%;
+  padding: 0.7rem;
+}
+
+/* line 132, ../../Proyecto Javascript/scss/styles.scss */
+.flexPosicionPuntos {
+  display: flex;
+  margin: 5rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+/* line 137, ../../Proyecto Javascript/scss/styles.scss */
+.flexPosicionPuntos h4 {
+  font-size: 3.5rem;
+  font-family: 'Alumni Sans Inline One', cursive;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
