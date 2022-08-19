@@ -18,13 +18,23 @@ body {
 
 /* line 18, ../../Proyecto Javascript/scss/styles.scss */
 h2 {
+  font-size: 6rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  margin-top: 10rem;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+/* line 26, ../../Proyecto Javascript/scss/styles.scss */
+h3 {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-top: 10rem;
+  font-family: 'Rubik Dirt', cursive;
 }
 
-/* line 27, ../../Proyecto Javascript/scss/styles.scss */
+/* line 36, ../../Proyecto Javascript/scss/styles.scss */
 #contenedor {
   display: grid;
   gap: 10px;
@@ -33,27 +43,27 @@ h2 {
   grid-template-rows: 10rem auto auto 8rem;
 }
 
-/* line 42, ../../Proyecto Javascript/scss/styles.scss */
+/* line 51, ../../Proyecto Javascript/scss/styles.scss */
 .navegador {
   grid-area: navegador;
 }
 
-/* line 45, ../../Proyecto Javascript/scss/styles.scss */
+/* line 54, ../../Proyecto Javascript/scss/styles.scss */
 .navegador .navbar {
   height: 10rem;
 }
 
-/* line 48, ../../Proyecto Javascript/scss/styles.scss */
+/* line 57, ../../Proyecto Javascript/scss/styles.scss */
 .navegador .navbar a {
   font-size: large;
 }
 
-/* line 54, ../../Proyecto Javascript/scss/styles.scss */
+/* line 63, ../../Proyecto Javascript/scss/styles.scss */
 .logo {
   width: 10rem;
 }
 
-/* line 58, ../../Proyecto Javascript/scss/styles.scss */
+/* line 67, ../../Proyecto Javascript/scss/styles.scss */
 header {
   grid-area: encabezado;
   background-color: rgba(145, 145, 145, 0.91);
@@ -61,43 +71,53 @@ header {
   justify-content: center;
 }
 
-/* line 65, ../../Proyecto Javascript/scss/styles.scss */
+/* line 74, ../../Proyecto Javascript/scss/styles.scss */
 .principal {
   grid-area: principal;
   background-color: rgba(145, 145, 145, 0.91);
 }
 
-/* line 70, ../../Proyecto Javascript/scss/styles.scss */
+/* line 79, ../../Proyecto Javascript/scss/styles.scss */
 .pie {
   grid-area: pie;
   background-color: rgba(145, 145, 145, 0.91);
 }
 
-/* line 81, ../../Proyecto Javascript/scss/styles.scss */
+/* line 90, ../../Proyecto Javascript/scss/styles.scss */
 .carousel {
   width: 90rem;
   padding: 3rem;
 }
 
-/* line 85, ../../Proyecto Javascript/scss/styles.scss */
+/* line 94, ../../Proyecto Javascript/scss/styles.scss */
 .carousel img {
   width: 100%;
 }
 
-/* line 94, ../../Proyecto Javascript/scss/styles.scss */
-.schedule1, .schedule2, .schedule3, .schedule4, .schedule5, .schedule6 {
+/* line 103, ../../Proyecto Javascript/scss/styles.scss */
+.schedule1,
+.schedule2,
+.schedule3,
+.schedule4,
+.schedule5,
+.schedule6 {
   display: flex;
   margin: 4rem;
 }
 
-/* line 97, ../../Proyecto Javascript/scss/styles.scss */
-.schedule1 img, .schedule2 img, .schedule3 img, .schedule4 img, .schedule5 img, .schedule6 img {
+/* line 112, ../../Proyecto Javascript/scss/styles.scss */
+.schedule1 img,
+.schedule2 img,
+.schedule3 img,
+.schedule4 img,
+.schedule5 img,
+.schedule6 img {
   width: 32rem;
   padding: 1rem;
   margin-bottom: 8rem;
 }
 
-/* line 104, ../../Proyecto Javascript/scss/styles.scss */
+/* line 120, ../../Proyecto Javascript/scss/styles.scss */
 .flexCircFecha {
   display: flex;
   flex-direction: column;
@@ -106,35 +126,43 @@ header {
   margin-bottom: 3rem;
 }
 
-/* line 113, ../../Proyecto Javascript/scss/styles.scss */
-.pilotos1, .pilotos2, .pilotos3, .pilotos4, .pilotos5 {
+/* line 129, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos1,
+.pilotos2,
+.pilotos3,
+.pilotos4,
+.pilotos5 {
   display: flex;
   justify-content: center;
 }
 
-/* line 116, ../../Proyecto Javascript/scss/styles.scss */
-.pilotos1 img, .pilotos2 img, .pilotos3 img, .pilotos4 img, .pilotos5 img {
-  width: 100%;
-  padding: 0.7rem;
-}
-
-/* line 121, ../../Proyecto Javascript/scss/styles.scss */
-.pilotos5 {
-  display: flex;
-}
-
-/* line 122, ../../Proyecto Javascript/scss/styles.scss */
-.pilotos5 div {
-  width: 26rem;
-}
-
-/* line 126, ../../Proyecto Javascript/scss/styles.scss */
+/* line 137, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos1 img,
+.pilotos2 img,
+.pilotos3 img,
+.pilotos4 img,
 .pilotos5 img {
   width: 100%;
   padding: 0.7rem;
 }
 
-/* line 132, ../../Proyecto Javascript/scss/styles.scss */
+/* line 143, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos5 {
+  display: flex;
+}
+
+/* line 144, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos5 div {
+  width: 26rem;
+}
+
+/* line 150, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos5 img {
+  width: 100%;
+  padding: 0.7rem;
+}
+
+/* line 156, ../../Proyecto Javascript/scss/styles.scss */
 .flexPosicionPuntos {
   display: flex;
   margin: 5rem;
@@ -142,11 +170,81 @@ header {
   justify-content: space-between;
 }
 
-/* line 137, ../../Proyecto Javascript/scss/styles.scss */
+/* line 162, ../../Proyecto Javascript/scss/styles.scss */
 .flexPosicionPuntos h4 {
   font-size: 3.5rem;
   font-family: 'Alumni Sans Inline One', cursive;
   padding: 0.5rem;
+}
+
+/* line 172, ../../Proyecto Javascript/scss/styles.scss */
+.imgEquipos {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+/* line 178, ../../Proyecto Javascript/scss/styles.scss */
+.imgEquipos :hover {
+  transform: scale(1.4);
+}
+
+/* line 182, ../../Proyecto Javascript/scss/styles.scss */
+.imgEquipos img {
+  width: 50%;
+  border: 0.8rem solid gray;
+  border-style: outset;
+  padding: 4rem;
+}
+
+/* line 191, ../../Proyecto Javascript/scss/styles.scss */
+.flexPilotos {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+/* line 196, ../../Proyecto Javascript/scss/styles.scss */
+.flexPilotos div {
+  margin: 3rem;
+}
+
+/* line 200, ../../Proyecto Javascript/scss/styles.scss */
+.flexPilotos h4 {
+  font-size: 3.5rem;
+  font-family: 'Alumni Sans Inline One', cursive;
+  padding: 0.5rem;
+}
+
+/* line 207, ../../Proyecto Javascript/scss/styles.scss */
+.posicionPuntosEquipo {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+/* line 212, ../../Proyecto Javascript/scss/styles.scss */
+.posicionPuntosEquipo h4 {
+  font-size: 3.5rem;
+  font-family: 'Alumni Sans Inline One', cursive;
+  padding: 0.5rem;
+  margin: 2rem;
+}
+
+/* line 221, ../../Proyecto Javascript/scss/styles.scss */
+.divBoton {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 225, ../../Proyecto Javascript/scss/styles.scss */
+.verEquipos {
+  width: 10rem;
+  height: 5rem;
+  margin: 5rem;
+  font-size: 1.5rem;
+  background-color: rgba(145, 145, 145, 0.91);
 }
 
 /*# sourceMappingURL=styles.css.map */
