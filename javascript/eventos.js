@@ -1,6 +1,84 @@
-// // Funciones
+// Variables Globales
+let datosUsuario = [];
 
-function schedule () {
+// Funciones
+
+// Funcion preferencias de Usuario (Localstore/Libreria Sweet Alert)
+function prefUsuario() {
+    pref = document.querySelector(".pref"),
+        pref.onclick = () => {
+            Swal.fire({
+                title: 'Datos',
+                html: `
+            <form> 
+            <h4> Nombre </h4>
+            <input type="text" class= "nombre" placeholder= "Nombre"> 
+            <hr>
+            <h4> Seleccione Pais </h4>
+            <select id="paisSelec">
+            <option > Argentina </option>
+            <option > Mexico <img src="img/paises/mexico.png" alt="Mexico" class="logo1"></option>
+            <option > EE.UU <img src="img/paises/estadosUnidos.png" alt="EE.UU" class="logo1"> </option>
+        </select>
+            <hr>
+            <h4> Fecha de nacimiento </h4>
+            <input type="text" class= "fechaNac" placeholder= "Fecha de Nacimiento">
+            <hr>
+            <h4> Piloto Favorito </h4>
+            <input type="text" class= "pilotoFav" placeholder= "Piloto Favorito">
+            <hr>
+            <button>Guardar Preferencias </button>
+            </form>
+            `,
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Aceptar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Datos Confirmados',
+                        guardarDatosUsuario()
+                    )
+                }
+            })
+        }
+
+
+} 
+
+function guardarDatosUsuario() {
+    let nombre = document.querySelector(".nombre").value
+    let fechaNac = document.querySelector(".fechaNac").value
+    let pilotoFav = document.querySelector(".pilotoFav").value
+    let paisSelec = document.querySelector("#paisSelec").value
+
+    let nombreUsuario = nombre.value;
+    let fechaUsuario = fechaNac.value;
+    let pilotoUsuario = pilotoFav.value;
+    let paisUsuario = paisSelec.value;
+
+    const datosTempUsuario = [
+        {
+            nombreUsuario,
+            fechaUsuario,
+            pilotoUsuario,
+            paisUsuario
+        }
+    ]
+
+    for (x of datosTempUsuario) {
+        datosUsuario.push({ nombreUsuario, fechaUsuario, pilotoUsuario, paisUsuario });
+
+        guardarLocal("datosUsuario", JSON.stringify(datosUsuario));
+    }
+
+
+
+}
+const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
+
+function mostrarSchedule() {
 
     for (const c of scheduleAlm1) {
         let schedule1 = document.querySelector(".schedule1")
@@ -175,8 +253,7 @@ function schedule () {
     }
 }
 
-
-function pilotos() {
+function mostrarPilotos() {
 
     for (const c of pilotos1) {
         let pilotos1 = document.querySelector(".pilotos1")
@@ -327,7 +404,6 @@ function infoEquipos() {
     }
 }
 
-
 // Arrays 
 const fechas2022 = [
     {
@@ -397,17 +473,14 @@ const fechas2022 = [
         fecha: new Date(2022, 10, 20, 10)
     }
 ];
-
-const fechasFormato = [];
 const horaEventos = [];
-
+const fechasFormato = [];
 
 for (f of fechas2022) {
     let fecha = f.fecha.getDate() + "/" + f.fecha.getMonth() + "/" + f.fecha.getFullYear() + " " + f.fecha.getHours() + ":" + f.fecha.getMinutes() + f.fecha.getSeconds() + " hs. (Argentina)";
 
     fechasFormato.push(fecha)
-}
-
+}  
 
 for (f of fechas2022) {
     let hora = f.fecha.getHours();
@@ -416,9 +489,93 @@ for (f of fechas2022) {
 
 }
 
+const equipos = [
+    {
+        equipo: "Red Bull Racing",
+        piloto1: "Max Verstappen",
+        piloto2: "Sergio Perez",
+        posicion: 1,
+        puntos: 396,
+        img: 'img/equipos/redBull.png'
+    },
+    {
+        equipo: "Ferrari",
+        piloto1: "Charles Leclerc",
+        piloto2: "Carlos Sainz",
+        posicion: 2,
+        puntos: 314,
+        img: 'img/equipos/ferrari.png'
+    },
+    {
+        equipo: "Mercedes Benz",
+        piloto1: "George Russell",
+        piloto2: "Lewis Hamilton",
+        posicion: 3,
+        puntos: 270,
+        img: 'img/equipos/mercedes.png'
+    },
+    {
+        equipo: "Alpine",
+        piloto1: "Esteban Ocon",
+        piloto2: "Fernando Alonso",
+        posicion: 4,
+        puntos: 93,
+        img: 'img/equipos/alpine.png'
+    },
 
+    {
+        equipo: "McLaren",
+        piloto1: "Lando Norris",
+        piloto2: "Daniel Ricciardo",
+        posicion: 5,
+        puntos: 89,
+        img: 'img/equipos/mclaren.png'
+    },
+    {
+        equipo: "Alfa Romeo",
+        piloto1: "Zhou Guanyu",
+        piloto2: "Valtteri Botas",
+        posicion: 6,
+        puntos: 51,
+        img: 'img/equipos/alfaRomeo.png'
+    },
+    {
+        equipo: "Haas F1 Team",
+        piloto1: "Kevin Magnussen",
+        piloto2: "Mick Schumacher",
+        posicion: 7,
+        puntos: 34,
+        img: 'img/equipos/hass.png'
+    },
+    {
+        equipo: "AlphaTauri",
+        piloto1: "Pierre Gasly",
+        piloto2: "Yuki Tsunoda",
+        posicion: 8,
+        puntos: 27,
+        img: 'img/equipos/alphatauri.png'
+    },
+    {
+        equipo: "Aston Martin",
+        piloto1: "Sebastian Vettel",
+        piloto2: "Lance Stroll",
+        posicion: 9,
+        puntos: 19,
+        img: 'img/equipos/astonMartin.png'
+    },
 
-// Arrays de objetos
+    {
+        equipo: "Williams",
+        piloto1: "Alexander Albon",
+        piloto2: "Nicholas Latifi",
+        posicion: 10,
+        puntos: 3,
+        img: 'img/equipos/williams.png'
+    },
+
+];
+
+// Array calendario en partes
 const schedule1 = [
     {
         circuito: "Bahrain International Circuit",
@@ -610,10 +767,11 @@ const schedule6 = [
 ];
 
 
+// Array calendario completo (Spread)
+const schedule = [...schedule1,...schedule2,...schedule3,...schedule4,...schedule5,...schedule6]
+
+
 // LOCALSTORAGE JSON (Utilizado para realizar el for del calendario)
-
-const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
-
 guardarLocal("schedule1", JSON.stringify(schedule1));
 guardarLocal("schedule2", JSON.stringify(schedule2));
 guardarLocal("schedule3", JSON.stringify(schedule3));
@@ -628,7 +786,7 @@ const scheduleAlm4 = JSON.parse(localStorage.getItem("schedule4"));
 const scheduleAlm5 = JSON.parse(localStorage.getItem("schedule5"));
 const scheduleAlm6 = JSON.parse(localStorage.getItem("schedule6"));
 
-
+// Array pilotos por partes
 const pilotos1 = [
     {
         piloto: "Max Verstappen",
@@ -810,7 +968,7 @@ const pilotos5 = [
         equipo: "Aston Martin",
         posicion: 21,
         puntos: 0,
-        img: "./img/pilotos/nikoHulkenberg.png"
+        img: "./img/pilotos/nicoHulkenberg.png"
     },
     {
         piloto: "Nikita Mazepin",
@@ -825,94 +983,47 @@ const pilotos5 = [
 pilotos5.pop()
 
 
-const equipos = [
-    {
-        equipo: "Red Bull Racing",
-        piloto1: "Max Verstappen",
-        piloto2: "Sergio Perez",
-        posicion: 1,
-        puntos: 396,
-        img: 'img/equipos/redBull.png'
-    },
-    {
-        equipo: "Ferrari",
-        piloto1: "Charles Leclerc",
-        piloto2: "Carlos Sainz",
-        posicion: 2,
-        puntos: 314,
-        img: 'img/equipos/ferrari.png'
-    },
-    {
-        equipo: "Mercedes Benz",
-        piloto1: "George Russell",
-        piloto2: "Lewis Hamilton",
-        posicion: 3,
-        puntos: 270,
-        img: 'img/equipos/mercedes.png'
-    },
-    {
-        equipo: "Alpine",
-        piloto1: "Esteban Ocon",
-        piloto2: "Fernando Alonso",
-        posicion: 4,
-        puntos: 93,
-        img: 'img/equipos/alpine.png'
-    },
-
-    {
-        equipo: "McLaren",
-        piloto1: "Lando Norris",
-        piloto2: "Daniel Ricciardo",
-        posicion: 5,
-        puntos: 89,
-        img: 'img/equipos/mclaren.png'
-    },
-    {
-        equipo: "Alfa Romeo",
-        piloto1: "Zhou Guanyu",
-        piloto2: "Valtteri Botas",
-        posicion: 6,
-        puntos: 51,
-        img: 'img/equipos/alfaRomeo.png'
-    },
-    {
-        equipo: "Haas F1 Team",
-        piloto1: "Kevin Magnussen",
-        piloto2: "Mick Schumacher",
-        posicion: 7,
-        puntos: 34,
-        img: 'img/equipos/hass.png'
-    },
-    {
-        equipo: "AlphaTauri",
-        piloto1: "Pierre Gasly",
-        piloto2: "Yuki Tsunoda",
-        posicion: 8,
-        puntos: 27,
-        img: 'img/equipos/alphatauri.png'
-    },
-    {
-        equipo: "Aston Martin",
-        piloto1: "Sebastian Vettel",
-        piloto2: "Lance Stroll",
-        posicion: 9,
-        puntos: 19,
-        img: 'img/equipos/astonMartin.png'
-    },
-
-    {
-        equipo: "Williams",
-        piloto1: "Alexander Albon",
-        piloto2: "Nicholas Latifi",
-        posicion: 10,
-        puntos: 3,
-        img: 'img/equipos/williams.png'
-    },
-
-];
+// Array pilotos completo (Spread)
+const pilotos = [...pilotos1,...pilotos2,...pilotos3,...pilotos4,...pilotos5]
 
 
-schedule();
-pilotos();
+mostrarSchedule();
+mostrarPilotos();
 infoEquipos();
+
+
+
+// Validacion de storage (AND)
+typeof(Storage) !== 'undefined' && prefUsuario () 
+
+// Or que identifica si las preferencias no fueron seleccionadas. 
+const datosUsuarioAlm = JSON.parse(localStorage.getItem('datosUsuario')) || alert ("Las preferencias no fueron seleccionadas")
+
+
+navigator.geolocation.getCurrentPosition (success,error) 
+
+// Obteniendo localizacion de usuario para proximamente destinar horarios segun su ubicacion. (Utilizacion de Sweet Alert/Libreria)
+function success (geolocationPosition) {
+let coords = geolocationPosition.coords;
+
+Swal.fire({
+    icon: 'success',
+    title: 'Coordenadas',
+    html: 'Latitud: ' + coords.latitude + '<br>' + 'Longuitud: ' + coords.longitude
+})
+
+};
+
+function error (err){
+    Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        html: err.message
+        
+})
+
+};
+
+success ();
+error ();
 
