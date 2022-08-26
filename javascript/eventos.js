@@ -1,5 +1,11 @@
 // Variables Globales
+
 let datosUsuario = [];
+
+
+const DateTime=luxon.DateTime;
+
+
 
 // Funciones
 
@@ -88,23 +94,15 @@ function mostrarSchedule() {
         let img = document.createElement("div")
         let contCircuito = document.createElement("div")
         let contFecha = document.createElement("div")
-        let contHora = document.createElement("button")
 
         contCircuito.innerHTML = `<h4>  ${c.circuito}</h4>`
         contFecha.innerHTML = ` <h4>  ${c.fecha}</h4> `
         img.innerHTML = `<img src = ${c.img} alt ="">`;
-        contHora.innerHTML = `<h4> Mas Horarios </h4> `
         schedule1.appendChild(contenedor)
         contenedor.appendChild(circuitoFecha)
         circuitoFecha.appendChild(contCircuito)
         circuitoFecha.appendChild(contFecha)
-        circuitoFecha.appendChild(contHora)
         contenedor.appendChild(img)
-
-        contHora.onclick = () => {
-            alert("Horario Mexico: " + parseInt(c.hora - 1) + ":00 hs" + "\n" + "Horario Estados Unidos: " + parseInt(c.hora - 2) + ":00 hs")
-        }
-
 
     }
 
@@ -117,23 +115,16 @@ function mostrarSchedule() {
         let img = document.createElement("div")
         let contCircuito = document.createElement("div")
         let contFecha = document.createElement("div")
-        let contHora = document.createElement("button")
 
 
         contCircuito.innerHTML = `<h4>  ${c.circuito}</h4>`
         contFecha.innerHTML = ` <h4>  ${c.fecha}</h4> `
         img.innerHTML = `<img src = ${c.img} alt ="">`;
-        contHora.innerHTML = `<h4> Mas Horarios </h4> `
         schedule2.appendChild(contenedor)
         contenedor.appendChild(circuitoFecha)
         circuitoFecha.appendChild(contCircuito)
         circuitoFecha.appendChild(contFecha)
         contenedor.appendChild(img)
-        circuitoFecha.appendChild(contHora)
-
-        contHora.onclick = () => {
-            alert("Horario Mexico: " + parseInt(c.hora - 1) + ":00 hs" + "\n" + "Horario Estados Unidos: " + parseInt(c.hora - 2) + ":00 hs")
-        }
 
     }
 
@@ -146,23 +137,17 @@ function mostrarSchedule() {
         let img = document.createElement("div")
         let contCircuito = document.createElement("div")
         let contFecha = document.createElement("div")
-        let contHora = document.createElement("button")
 
 
         contCircuito.innerHTML = `<h4>  ${c.circuito}</h4>`
         contFecha.innerHTML = ` <h4>  ${c.fecha}</h4> `
         img.innerHTML = `<img src = ${c.img} alt ="">`;
-        contHora.innerHTML = `<h4> Mas Horarios </h4> `
         schedule3.appendChild(contenedor)
         contenedor.appendChild(circuitoFecha)
         circuitoFecha.appendChild(contCircuito)
         circuitoFecha.appendChild(contFecha)
         contenedor.appendChild(img)
-        circuitoFecha.appendChild(contHora)
 
-        contHora.onclick = () => {
-            alert("Horario Mexico: " + parseInt(c.hora - 1) + ":00 hs" + "\n" + "Horario Estados Unidos: " + parseInt(c.hora - 2) + ":00 hs")
-        }
 
     }
 
@@ -175,24 +160,16 @@ function mostrarSchedule() {
         let img = document.createElement("div")
         let contCircuito = document.createElement("div")
         let contFecha = document.createElement("div")
-        let contHora = document.createElement("button")
 
 
         contCircuito.innerHTML = `<h4>  ${c.circuito}</h4>`
         contFecha.innerHTML = ` <h4>  ${c.fecha}</h4> `
         img.innerHTML = `<img src = ${c.img} alt ="">`
-        contHora.innerHTML = `<h4> Mas Horarios </h4> `
         schedule4.appendChild(contenedor)
         contenedor.appendChild(circuitoFecha)
         circuitoFecha.appendChild(contCircuito)
         circuitoFecha.appendChild(contFecha)
         contenedor.appendChild(img)
-        circuitoFecha.appendChild(contHora)
-
-        contHora.onclick = () => {
-            alert("Horario Mexico: " + parseInt(c.hora - 1) + ":00 hs" + "\n" + "Horario Estados Unidos: " + parseInt(c.hora - 2) + ":00 hs")
-        }
-
 
     }
 
@@ -204,24 +181,16 @@ function mostrarSchedule() {
         let img = document.createElement("div")
         let contCircuito = document.createElement("div")
         let contFecha = document.createElement("div")
-        let contHora = document.createElement("button")
 
 
         contCircuito.innerHTML = `<h4>  ${c.circuito}</h4>`
         contFecha.innerHTML = ` <h4>  ${c.fecha}</h4> `
         img.innerHTML = `<img src = ${c.img} alt ="">`
-        contHora.innerHTML = `<h4> Mas Horarios </h4> `
         schedule5.appendChild(contenedor)
         contenedor.appendChild(circuitoFecha)
         circuitoFecha.appendChild(contCircuito)
         circuitoFecha.appendChild(contFecha)
         contenedor.appendChild(img)
-        circuitoFecha.appendChild(contHora)
-
-        contHora.onclick = () => {
-            alert("Horario Mexico: " + parseInt(c.hora - 1) + ":00 hs" + "\n" + "Horario Estados Unidos: " + parseInt(c.hora - 2) + ":00 hs")
-        }
-
     }
 
     for (const c of scheduleAlm6) {
@@ -232,23 +201,16 @@ function mostrarSchedule() {
         let img = document.createElement("div")
         let contCircuito = document.createElement("div")
         let contFecha = document.createElement("div")
-        let contHora = document.createElement("button")
 
 
         contCircuito.innerHTML = `<h4>  ${c.circuito}</h4>`
         contFecha.innerHTML = ` <h4>  ${c.fecha}</h4> `
         img.innerHTML = `<img src = ${c.img} alt ="">`;
-        contHora.innerHTML = `<h4> Mas Horarios </h4> `
         schedule6.appendChild(contenedor)
         contenedor.appendChild(circuitoFecha)
         circuitoFecha.appendChild(contCircuito)
         circuitoFecha.appendChild(contFecha)
         contenedor.appendChild(img)
-        circuitoFecha.appendChild(contHora)
-
-        contHora.onclick = () => {
-            alert("Horario Mexico: " + parseInt(c.hora - 1) + ":00 hs" + "\n" + "Horario Estados Unidos: " + parseInt(c.hora - 2) + ":00 hs")
-        }
 
     }
 }
@@ -405,89 +367,86 @@ function infoEquipos() {
 }
 
 // Arrays 
+// Fechas del calendario Utilizacion de Libreria Luxon
 const fechas2022 = [
     {
-        fecha: new Date(2022, 2, 20, 10),
+      fecha: DateTime.local(2022, 2, 20, 10,00)
     },
     {
-        fecha: new Date(2022, 2, 27, 11)
+        fecha: DateTime.local(2022, 2, 27, 11,)
     },
     {
-        fecha: new Date(2022, 3, 10, 12)
+        fecha: DateTime.local(2022, 3, 10, 12)
     },
     {
-        fecha: new Date(2022, 3, 24, 10)
+        fecha: DateTime.local(2022, 3, 24, 10)
     },
     {
-        fecha: new Date(2022, 4, 8, 11)
+        fecha: DateTime.local(2022, 4, 8, 11)
     },
     {
-        fecha: new Date(2022, 4, 22, 12)
+        fecha: DateTime.local(2022, 4, 22, 12)
     },
     {
-        fecha: new Date(2022, 4, 29, 11)
+        fecha: DateTime.local(2022, 4, 29, 11)
     },
     {
-        fecha: new Date(2022, 5, 12, 12)
+        fecha: DateTime.local(2022, 5, 12, 12)
     },
     {
-        fecha: new Date(2022, 5, 19, 10)
+        fecha: DateTime.local(2022, 5, 19, 10)
     },
     {
-        fecha: new Date(2022, 6, 3, 13)
+        fecha: DateTime.local(2022, 6, 3, 13)
     },
     {
-        fecha: new Date(2022, 6, 10, 11)
+        fecha: DateTime.local(2022, 6, 10, 10)
     },
     {
-        fecha: new Date(2022, 6, 24, 11)
+        fecha: DateTime.local(2022, 6, 24, 11)
     },
     {
-        fecha: new Date(2022, 6, 31, 10)
+        fecha: DateTime.local(2022, 6, 30, 10)
     },
     {
-        fecha: new Date(2022, 7, 28, 10)
+        fecha: DateTime.local(2022, 7, 28, 10)
     },
     {
-        fecha: new Date(2022, 8, 4, 12)
+        fecha: DateTime.local(2022, 8, 4, 12)
     },
     {
-        fecha: new Date(2022, 8, 11, 12)
+        fecha: DateTime.local(2022, 8, 11, 12)
     },
     {
-        fecha: new Date(2022, 9, 2, 11)
+        fecha: DateTime.local(2022, 9, 2, 11)
     },
     {
-        fecha: new Date(2022, 9, 9, 12)
+        fecha: DateTime.local(2022, 9, 9, 12)
     },
     {
-        fecha: new Date(2022, 9, 23, 11)
+        fecha: DateTime.local(2022, 9, 23, 11)
     },
     {
-        fecha: new Date(2022, 9, 30, 12)
+        fecha: DateTime.local(2022, 9, 30, 12)
     },
     {
-        fecha: new Date(2022, 10, 13, 9)
+        fecha: DateTime.local(2022, 10, 13, 9)
     },
     {
-        fecha: new Date(2022, 10, 20, 10)
+        fecha: DateTime.local(2022, 10, 20, 10)
     }
 ];
-const horaEventos = [];
+
+// Formato a fechas con luxon
 const fechasFormato = [];
-
 for (f of fechas2022) {
-    let fecha = f.fecha.getDate() + "/" + f.fecha.getMonth() + "/" + f.fecha.getFullYear() + " " + f.fecha.getHours() + ":" + f.fecha.getMinutes() + f.fecha.getSeconds() + " hs. (Argentina)";
-
-    fechasFormato.push(fecha)
-}  
-
-for (f of fechas2022) {
-    let hora = f.fecha.getHours();
-
-    horaEventos.push(hora)
-
+ let fechaYHora= { fecha : f.fecha.toLocaleString(DateTime.DATETIME_SHORT),
 }
+ fechasFormato.push (fechaYHora)
+
+};
+
+
 
 const equipos = [
     {
@@ -580,16 +539,14 @@ const schedule1 = [
     {
         circuito: "Bahrain International Circuit",
         vueltas: 57,
-        fecha: fechasFormato[0],
-        hora: horaEventos[0],
+        fecha: fechasFormato[0].fecha,
         img: "./img/circuitos/bahrain.png"
 
     },
     {
         circuito: "Jeddah",
         vueltas: 50,
-        fecha: fechasFormato[1],
-        hora: horaEventos[1],
+        fecha: fechasFormato[1].fecha,
         img: "img/circuitos/jeddah.png"
 
 
@@ -597,49 +554,45 @@ const schedule1 = [
     {
         circuito: "Albert Park",
         vueltas: 58,
-        fecha: fechasFormato[2],
-        hora: horaEventos[2],
+        fecha: fechasFormato[2].fecha,
         img: 'img/circuitos/albertPark.png'
 
     },
     {
         circuito: "Autodromo Enzo e Dino Ferrari",
         vueltas: 63,
-        fecha: fechasFormato[3],
-        hora: horaEventos[3],
+        fecha: fechasFormato[3].fecha,
         img: 'img/circuitos/enzoEDino.png'
 
     },]
+
+    console.log(schedule1)
 const schedule2 = [
     {
         circuito: "Autodromo Internacional de Miami",
         vueltas: 57,
-        fecha: fechasFormato[4],
-        hora: horaEventos[4],
+        fecha: fechasFormato[4].fecha,
         img: 'img/circuitos/miamiCircuit.png'
 
     },
     {
         circuito: "Circuit de Barcelona - Catalunya",
         vueltas: 66,
-        fecha: fechasFormato[5],
-        hora: horaEventos[5],
+        fecha: fechasFormato[5].fecha,
         img: 'img/circuitos/barcelonaCircuit.png'
 
     },
     {
         circuito: "Monte Carlo",
         vueltas: 78,
-        fecha: fechasFormato[6],
-        hora: horaEventos[6],
+        fecha: fechasFormato[6].fecha,
         img: 'img/circuitos/monacoCircuit.png'
 
     },
     {
         circuito: "Baku City Circuit",
         vueltas: 51,
-        fecha: fechasFormato[7],
-        hora: horaEventos[7],
+        fecha: fechasFormato[7].fecha,
         img: 'img/circuitos/bakuCityCircuit.png'
 
     }]
@@ -647,32 +600,28 @@ const schedule3 = [
     {
         circuito: "Circuit Gilles Villeneuve",
         vueltas: 70,
-        fecha: fechasFormato[8],
-        hora: horaEventos[8],
+        fecha: fechasFormato[8].fecha,
         img: 'img/circuitos/gillesVillenueveCircuit.png'
 
     },
     {
         circuito: "Silverstone",
         vueltas: 52,
-        fecha: fechasFormato[9],
-        hora: horaEventos[9],
+        fecha: fechasFormato[9].fecha,
         img: 'img/circuitos/silverstoneCircuit.png'
 
     },
     {
         circuito: "Red Bull Ring",
         vueltas: 71,
-        fecha: fechasFormato[10],
-        hora: horaEventos[10],
+        fecha: fechasFormato[10].fecha,
         img: 'img/circuitos/redBullRing.png'
 
     },
     {
         circuito: "Paul Ricard",
         vueltas: 53,
-        fecha: fechasFormato[11],
-        hora: horaEventos[11],
+        fecha: fechasFormato[11].fecha,
         img: 'img/circuitos/paulRicardCircuit.png'
 
     }]
@@ -680,32 +629,28 @@ const schedule4 = [
     {
         circuito: "Hungaroring",
         vueltas: 70,
-        fecha: fechasFormato[12],
-        hora: horaEventos[12],
+        fecha: fechasFormato[12].fecha,
         img: 'img/circuitos/hungaroRing.png'
 
     },
     {
         circuito: "Spa - Francorchamps",
         vueltas: 44,
-        fecha: fechasFormato[13],
-        hora: horaEventos[13],
+        fecha: fechasFormato[13].fecha,
         img: 'img/circuitos/spaFrancorChamps.png'
 
     },
     {
         circuito: "Zandvoort",
         vueltas: 72,
-        fecha: fechasFormato[14],
-        hora: horaEventos[14],
+        fecha: fechasFormato[14].fecha,
         img: 'img/circuitos/zandvoort.png'
 
     },
     {
         circuito: "Autodromo Nazionale di Monza",
         vueltas: 53,
-        fecha: fechasFormato[15],
-        hora: horaEventos[15],
+        fecha: fechasFormato[15].fecha,
         img: 'img/circuitos/monza.png'
 
     }]
@@ -714,32 +659,28 @@ const schedule5 = [
     {
         circuito: "Marina Bay Circuit",
         vueltas: 61,
-        fecha: fechasFormato[16],
-        hora: horaEventos[16],
+        fecha: fechasFormato[16].fecha,
         img: 'img/circuitos/marinaBayCircuit.png'
 
     },
     {
         circuito: "Suzuka",
         vueltas: 53,
-        fecha: fechasFormato[17],
-        hora: horaEventos[17],
+        fecha: fechasFormato[17].fecha,
         img: 'img/circuitos/suzukaCircuit.png'
 
     },
     {
         circuito: "Circuito de las Americas",
         vueltas: 56,
-        fecha: fechasFormato[18],
-        hora: horaEventos[18],
+        fecha: fechasFormato[18].fecha,
         img: 'img/circuitos/circuitOfTheAmericas.png'
 
     },
     {
         circuito: "Interlagos",
         vueltas: 71,
-        fecha: fechasFormato[19],
-        hora: horaEventos[19],
+        fecha: fechasFormato[19].fecha,
         img: 'img/circuitos/interlagos.png'
 
     }]
@@ -747,8 +688,7 @@ const schedule6 = [
     {
         circuito: "Yas Marina Circuit",
         vueltas: 58,
-        fecha: fechasFormato[20],
-        hora: horaEventos[20],
+        fecha: fechasFormato[20].fecha,
         img: 'img/circuitos/yasMarinaCircuit.png'
 
     },
@@ -756,8 +696,7 @@ const schedule6 = [
     {
         circuito: "Hermanos Rodriguez",
         vueltas: 71,
-        fecha: fechasFormato[21],
-        hora: horaEventos[21],
+        fecha: fechasFormato[21].fecha,
         img: 'img/circuitos/hermanosRodriguez.png'
 
     },
@@ -995,10 +934,6 @@ infoEquipos();
 
 // Validacion de storage (AND)
 typeof(Storage) !== 'undefined' && prefUsuario () 
-
-// Or que identifica si las preferencias no fueron seleccionadas. 
-const datosUsuarioAlm = JSON.parse(localStorage.getItem('datosUsuario')) || alert ("Las preferencias no fueron seleccionadas")
-
 
 navigator.geolocation.getCurrentPosition (success,error) 
 
