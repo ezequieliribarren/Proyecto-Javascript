@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Rubik+Dirt&display=swap"
         rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
 
 
 </head>
@@ -29,98 +31,102 @@
 
     <!-- Navbar -->
     <div class="navegador">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="img/logo/logo.png" alt="" class="logoPrinc"></a>
+                <a class="navbar-brand" href="#"><img class="logo" src="/img/logo/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="eventos">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pilotos">Pilotos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="equipos">Equipos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> <button class="pref"> Preferencias </button></a>
-                        </li>
-                        <a id="banderaPais" class="nav-link" href="#"> </a>
-                        </li>
-                    </ul>
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="eventos1">Eventos</a>
+                        <a class="nav-link" href="pilotos">Pilotos</a>
+                        <a class="nav-link" href="equipos">Equipos</a>
+                        <a class="nav-link" href="#"><button class="btn btn-dark pref"><img src="https://cdn.pixabay.com/photo/2016/05/27/17/17/nut-1420234_1280.png" width= "35rem"></button></a>
+                        <div class = "logoF1">
+                            <img src="img/logo/formula-1-logo-7.png" alt="">
+                        </div>
+                    </div>
                 </div>
-            </div>
         </nav>
     </div>
 
+
     <div class="container"></div>
+
     <header class="encabezado">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/carousel/carousel1.jpg" class="d-block w-100" alt="...">
+
+        <div class="contCarousell">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carousel/carousel1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel/carousel2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel/carousel3.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/carousel/carousel2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel/carousel3.jpg" class="d-block w-100" alt="...">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+        <div class="diseñoTit">
+            <div class="formaTit"></div><h2>Proximos Eventos</h2>
+        </div>
+        <div class="tablaPref">
+            <div class="tableEvents">
+                <table class="table table-dark">
+                    <tbody class="cuerpoTabla"></tbody>
+                </table>
+            </div>
+            </div>
+
+
         </div>
     </header>
     </div>
     <main class="principal">
+        <div class="diseñoTit">
+            <div class="formaTit1"></div><h2 id="eventos1">Eventos</h2>
+        </div>
+
         <div class="container">
-            <div>
-                <h2 id="eventos">Eventos</h2>
-            </div>
+         
+            <div class="row" id="eventos"></div>
 
-            <div class="eventos">
-                <div class="schedule1"></div>
-                <div class="schedule2"></div>
-                <div class="schedule3"></div>
-                <div class="schedule4"></div>
-                <div class="schedule5"></div>
-                <div class="schedule6"></div>
+</div>
+            <div class="diseñoTit">
+                <div class="formaTit2"></div><h2 id="pilotos">Pilotos</h2>
             </div>
-
 
             <div class="container">
-                <div>
-                    <h2 id="pilotos">Pilotos</h2>
-                </div>
+          
+            
                 <div class="pilotos">
-                    <div class="pilotos1"></div>
-                    <div class="pilotos2"></div>
-                    <div class="pilotos3"></div>
-                    <div class="pilotos4"></div>
-                    <div class="pilotos5"></div>
-
+                </div>
                 </div>
 
-
+<div class="diseñoTit">
+<div class="formaTit3"></div><h2 id="equipos">Equipos</h2>    
+</div>
+                
                 <div class="container">
-                    <h2 id="equipos">Equipos</h2>
-                </div>
+
                 <div class="divBoton">
-                    <button class="verEquipos">Ver Equipos</button>
+                    <button class="verEquipos btn btn-dark">Ver Equipos</button>
 
                 </div>
 
@@ -128,6 +134,8 @@
 
 
                 </div>
+            </div>
+            
     </main>
 
     <footer class="pie">
@@ -147,13 +155,15 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Luxon -->
-    <script src="https://cdn.jsdelivr.net/npm/luxon@2.4.0/build/global/luxon.min.js"></script>    
-    
-    <!-- Link Javascript -->
-    <script src="./javascript/eventos.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.4.0/build/global/luxon.min.js"></script>
 
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js'></script>
+
+
+    <!-- Link Javascript -->
+    <script src="./javascript/script.js"></script>
+</body>
 
 </html>
 
-<button></button>
+

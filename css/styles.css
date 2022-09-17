@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 2, ../../Proyecto Javascript/scss/styles.scss */
 html {
   font-size: 62.5%;
@@ -6,7 +7,7 @@ html {
 
 /* line 7, ../../Proyecto Javascript/scss/styles.scss */
 * {
-  Margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -20,180 +21,240 @@ body {
 h2 {
   font-size: 6rem;
   text-align: center;
-  margin-bottom: 6rem;
-  margin-top: 10rem;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: 'Secular One', sans-serif;
+  color: aliceblue;
 }
 
-/* line 26, ../../Proyecto Javascript/scss/styles.scss */
+/* line 24, ../../Proyecto Javascript/scss/styles.scss */
 h3 {
   font-size: 4rem;
   text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 10rem;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: 'Secular One', sans-serif;
+  color: aliceblue;
 }
 
-/* line 36, ../../Proyecto Javascript/scss/styles.scss */
+/* line 32, ../../Proyecto Javascript/scss/styles.scss */
 #contenedor {
   display: grid;
-  gap: 10px;
   grid-template-areas: "navegador" "encabezado" "principal" "pie";
   grid-template-columns: 100%;
   grid-template-rows: 10rem auto auto 8rem;
 }
 
-/* line 51, ../../Proyecto Javascript/scss/styles.scss */
+/* line 46, ../../Proyecto Javascript/scss/styles.scss */
 .navegador {
   grid-area: navegador;
 }
 
-/* line 54, ../../Proyecto Javascript/scss/styles.scss */
-.navegador .navbar {
+/* line 49, ../../Proyecto Javascript/scss/styles.scss */
+.logo {
+  width: 8rem;
+}
+
+/* line 53, ../../Proyecto Javascript/scss/styles.scss */
+.nav {
   width: 100%;
   height: 10rem;
   position: fixed;
-  z-index: 0;
+  z-index: 2;
 }
 
-/* line 60, ../../Proyecto Javascript/scss/styles.scss */
-.navegador .navbar li {
-  margin: 1rem;
-}
-
-/* line 64, ../../Proyecto Javascript/scss/styles.scss */
-.navegador .navbar a {
+/* line 59, ../../Proyecto Javascript/scss/styles.scss */
+.nav a {
+  margin: 0.5rem;
   font-size: 1.8rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 4rem;
+  display: flex;
+  align-items: center;
 }
 
 /* line 71, ../../Proyecto Javascript/scss/styles.scss */
-.logo1, .logo2, .logo3 {
-  width: 3rem;
-  margin: 1rem;
+.logoF1 img {
+  width: 7.5rem;
 }
 
 /* line 77, ../../Proyecto Javascript/scss/styles.scss */
-.logoPrinc {
-  width: 10rem;
-  margin: 2rem;
+.pref {
+  font-size: 1.5rem;
 }
 
 /* line 82, ../../Proyecto Javascript/scss/styles.scss */
 header {
   grid-area: encabezado;
-  background-color: rgba(145, 145, 145, 0.91);
-  display: flex;
-  justify-content: center;
+  background-color: rgba(66, 64, 64, 0.91);
 }
 
-/* line 89, ../../Proyecto Javascript/scss/styles.scss */
+/* line 87, ../../Proyecto Javascript/scss/styles.scss */
 .principal {
   grid-area: principal;
-  background-color: rgba(145, 145, 145, 0.91);
+  background-color: rgba(66, 64, 64, 0.91);
 }
 
-/* line 94, ../../Proyecto Javascript/scss/styles.scss */
+/* line 92, ../../Proyecto Javascript/scss/styles.scss */
 .pie {
   grid-area: pie;
-  background-color: rgba(145, 145, 145, 0.91);
+  background-color: rgba(66, 64, 64, 0.91);
 }
 
-/* line 105, ../../Proyecto Javascript/scss/styles.scss */
-.carousel {
-  width: 90rem;
-  padding: 3rem;
-}
-
-/* line 110, ../../Proyecto Javascript/scss/styles.scss */
-.carousel img {
-  width: 100%;
-}
-
-/* line 119, ../../Proyecto Javascript/scss/styles.scss */
-.schedule1,
-.schedule2,
-.schedule3,
-.schedule4,
-.schedule5,
-.schedule6 {
+/* line 98, ../../Proyecto Javascript/scss/styles.scss */
+.diseñoTit {
   display: flex;
-  margin: 4rem;
 }
 
-/* line 128, ../../Proyecto Javascript/scss/styles.scss */
-.schedule1 img,
-.schedule2 img,
-.schedule3 img,
-.schedule4 img,
-.schedule5 img,
-.schedule6 img {
-  width: 32rem;
-  padding: 1rem;
-  margin-bottom: 8rem;
+/* line 101, ../../Proyecto Javascript/scss/styles.scss */
+.formaTit, .formaTit1, .formaTit2, .formaTit3 {
+  width: 35rem;
+  background-color: #2a2929;
+  height: 4rem;
+  margin-top: 1.3rem;
+  margin-right: 4rem;
 }
 
-/* line 136, ../../Proyecto Javascript/scss/styles.scss */
-.flexCircFecha {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  margin-bottom: 3rem;
-}
-
-/* line 145, ../../Proyecto Javascript/scss/styles.scss */
-.pilotos1,
-.pilotos2,
-.pilotos3,
-.pilotos4,
-.pilotos5 {
+/* line 116, ../../Proyecto Javascript/scss/styles.scss */
+.contCarousell {
   display: flex;
   justify-content: center;
+}
+
+/* line 120, ../../Proyecto Javascript/scss/styles.scss */
+.carousel {
+  width: 80%;
+  padding-top: 2rem;
+}
+
+/* line 132, ../../Proyecto Javascript/scss/styles.scss */
+.tableEvents {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 138, ../../Proyecto Javascript/scss/styles.scss */
+.tableEvents table {
+  width: 120rem;
+}
+
+/* line 143, ../../Proyecto Javascript/scss/styles.scss */
+.tableEvents td {
+  font-family: 'Secular One', sans-serif;
+  width: 15rem;
+}
+
+/* line 150, ../../Proyecto Javascript/scss/styles.scss */
+.cuerpoTabla {
+  text-align: center;
 }
 
 /* line 153, ../../Proyecto Javascript/scss/styles.scss */
-.pilotos1 img,
-.pilotos2 img,
-.pilotos3 img,
-.pilotos4 img,
-.pilotos5 img {
-  width: 100%;
-  padding: 0.7rem;
+.cuerpoTabla .banderaPais {
+  width: 4rem;
 }
 
-/* line 159, ../../Proyecto Javascript/scss/styles.scss */
-.pilotos5 {
+/* line 158, ../../Proyecto Javascript/scss/styles.scss */
+.cuerpoTabla .imagenTabla img {
+  width: 12rem;
+  background-color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 168, ../../Proyecto Javascript/scss/styles.scss */
+  thead {
+    display: none;
+  }
+  /* line 171, ../../Proyecto Javascript/scss/styles.scss */
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+  /* line 176, ../../Proyecto Javascript/scss/styles.scss */
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
+}
+
+/* line 185, ../../Proyecto Javascript/scss/styles.scss */
+#eventos {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* line 160, ../../Proyecto Javascript/scss/styles.scss */
-.pilotos5 div {
-  width: 26rem;
+/* line 190, ../../Proyecto Javascript/scss/styles.scss */
+#eventos .col-8 {
+  width: 35rem;
 }
 
-/* line 166, ../../Proyecto Javascript/scss/styles.scss */
-.pilotos5 img {
+/* line 193, ../../Proyecto Javascript/scss/styles.scss */
+#eventos .col-8 .flexSchedule {
+  width: 30rem;
+  height: 37rem;
+  border: solid gray;
+  margin: 1rem;
+}
+
+/* line 199, ../../Proyecto Javascript/scss/styles.scss */
+#eventos .col-8 .flexSchedule div {
+  margin-top: 2.5rem;
+}
+
+/* line 204, ../../Proyecto Javascript/scss/styles.scss */
+#eventos .col-8 .flexSchedule ul {
+  text-align: center;
+  margin-right: 1.5rem;
+}
+
+/* line 209, ../../Proyecto Javascript/scss/styles.scss */
+#eventos .col-8 .flexSchedule img {
   width: 100%;
-  padding: 0.7rem;
 }
 
-/* line 172, ../../Proyecto Javascript/scss/styles.scss */
-.flexPosicionPuntos {
+/* line 221, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos {
   display: flex;
-  margin: 5rem;
-  margin-bottom: 1rem;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* line 178, ../../Proyecto Javascript/scss/styles.scss */
-.flexPosicionPuntos h4 {
-  font-size: 3.5rem;
-  font-family: 'Alumni Sans Inline One', cursive;
-  padding: 0.5rem;
+/* line 226, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos .contenedor {
+  width: 30rem;
+  margin: 6rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
-/* line 188, ../../Proyecto Javascript/scss/styles.scss */
+/* line 234, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos .contenedor ul {
+  width: 15rem;
+  list-style: none;
+  background-color: #2a2929;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* line 243, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos .contenedor ul li {
+  margin: 1.5rem;
+  color: aliceblue;
+}
+
+/* line 247, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos .contenedor ul li .posicion {
+  font-size: xx-large;
+}
+
+/* line 251, ../../Proyecto Javascript/scss/styles.scss */
+.pilotos .contenedor ul li h4 {
+  font-size: large;
+}
+
+/* line 265, ../../Proyecto Javascript/scss/styles.scss */
 .imgEquipos {
   display: flex;
   justify-content: center;
@@ -201,12 +262,12 @@ header {
   margin-bottom: 10rem;
 }
 
-/* line 194, ../../Proyecto Javascript/scss/styles.scss */
+/* line 271, ../../Proyecto Javascript/scss/styles.scss */
 .imgEquipos :hover {
   transform: scale(1.4);
 }
 
-/* line 198, ../../Proyecto Javascript/scss/styles.scss */
+/* line 275, ../../Proyecto Javascript/scss/styles.scss */
 .imgEquipos img {
   width: 50%;
   border: 0.8rem solid gray;
@@ -214,33 +275,33 @@ header {
   padding: 4rem;
 }
 
-/* line 207, ../../Proyecto Javascript/scss/styles.scss */
+/* line 284, ../../Proyecto Javascript/scss/styles.scss */
 .flexPilotos {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
 }
 
-/* line 213, ../../Proyecto Javascript/scss/styles.scss */
+/* line 290, ../../Proyecto Javascript/scss/styles.scss */
 .flexPilotos div {
   margin: 3rem;
 }
 
-/* line 217, ../../Proyecto Javascript/scss/styles.scss */
+/* line 294, ../../Proyecto Javascript/scss/styles.scss */
 .flexPilotos h4 {
   font-size: 3.5rem;
   font-family: 'Alumni Sans Inline One', cursive;
   padding: 0.5rem;
 }
 
-/* line 224, ../../Proyecto Javascript/scss/styles.scss */
+/* line 301, ../../Proyecto Javascript/scss/styles.scss */
 .posicionPuntosEquipo {
   display: flex;
   margin-bottom: 1rem;
   justify-content: center;
 }
 
-/* line 229, ../../Proyecto Javascript/scss/styles.scss */
+/* line 306, ../../Proyecto Javascript/scss/styles.scss */
 .posicionPuntosEquipo h4 {
   font-size: 3.5rem;
   font-family: 'Alumni Sans Inline One', cursive;
@@ -248,19 +309,17 @@ header {
   margin: 2rem;
 }
 
-/* line 239, ../../Proyecto Javascript/scss/styles.scss */
+/* line 316, ../../Proyecto Javascript/scss/styles.scss */
 .divBoton {
   display: flex;
   justify-content: center;
 }
 
-/* line 244, ../../Proyecto Javascript/scss/styles.scss */
-.verEquipos {
-  width: 10rem;
-  height: 5rem;
-  margin: 5rem;
-  font-size: 1.5rem;
-  background-color: rgba(145, 145, 145, 0.91);
+/* line 320, ../../Proyecto Javascript/scss/styles.scss */
+.divBoton button {
+  width: 12rem;
+  height: 6rem;
+  font-size: large;
 }
 
 /*# sourceMappingURL=styles.css.map */
