@@ -1,6 +1,7 @@
 // Variables/Arrays
 let datosUsuario = [];
 const DateTime = luxon.DateTime;
+const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
 let teamsData = []; 
 
 
@@ -73,7 +74,7 @@ function prefUsuario() {
 
                 }
 
-                else if (equipoSelec = "Seleccione") {
+                else if (equipoSelec === "Seleccione") {
                     ev.preventDefault();
                     Swal.fire({
                         title: 'Atención',
@@ -82,7 +83,7 @@ function prefUsuario() {
                         confirmButtonText: "Aceptar"})
                 }
                 else {
-                    guardarDatosUsuario(),
+                    guardarDatosUsuario();
                         location.reload()
 
                     Swal.fire(
@@ -149,31 +150,24 @@ async function obtenerJSON() {
                     for (const x of equipos) {
                         let contenedor = document.createElement("div")
                         let posicionPuntos = document.createElement("div")
-                        let pilotosDeEquipo = document.createElement("div")
                         let img = document.createElement("div")
                         let contPosicion = document.createElement("div")
                         let contPuntos = document.createElement("div")
-                        let contDirector = document.createElement("div")
-                        let contPresident = document.createElement("div")
 
                         posicionPuntos.classList.add("posicionPuntosEquipo")
-                        pilotosDeEquipo.classList.add("flexPilotos")
                         img.classList.add("imgEquipos")
 
-                        contenedor.innerHTML = `<h3>  ${x.team.name}</h3>`
+                        contenedor.innerHTML = `<h3 class= "titEquipo">  ${x.team.name}</h3>`
                         contPosicion.innerHTML = `<h4> # ${x.position}</h4>`
                         contPuntos.innerHTML = ` <h4> ${x.points} pts</h4> `
                         img.innerHTML = `<img src = ${x.team.logo} alt ="">`
                         contEquipos.appendChild(contenedor)
-                        contenedor.appendChild(pilotosDeEquipo)
                         contenedor.appendChild(posicionPuntos)
                         posicionPuntos.appendChild(contPosicion)
                         posicionPuntos.appendChild(contPuntos)
-                        pilotosDeEquipo.appendChild(contPresident)
-                        pilotosDeEquipo.appendChild(contDirector)
                         contenedor.appendChild(img)
 
-                        verEquipos.innerText = "Ocultar Equipos"
+                        verEquipos.innerText = "Ocultar Equipos"  
 
                     }
 
@@ -397,11 +391,18 @@ function schedule() {
 
 // Datos de pilotos (Consumo de API) (Seccion "Pilotos")
 function pilots() {
-
-    fetch('http://demo8435158.mockable.io/pilots')
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '58622724afmshb746b3eea286b7ep1f9773jsn4008607a6d78',
+            'X-RapidAPI-Host': 'api-formula-1.p.rapidapi.com'
+        }
+    };
+    
+    fetch('https://api-formula-1.p.rapidapi.com/rankings/drivers?season=2022', options)
         .then(response => response.json())
-        .then((data) => {
-            let pilots = data
+        .then(data => {
+            let pilots = data.response
             console.log(pilots)
             for (const x of pilots) {
                 let pilotos = document.querySelector('.pilotos')
@@ -441,6 +442,6 @@ function pilots() {
 
 obtenerJSON();
 prefUsuario();
-// schedule();
-// pilots();
+schedule();
+pilots();
 

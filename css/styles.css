@@ -17,41 +17,46 @@ body {
   min-height: 100%;
 }
 
-/* line 18, ../../Proyecto Javascript/scss/styles.scss */
-h2 {
-  font-size: 6rem;
-  text-align: center;
-  font-family: 'Secular One', sans-serif;
-  color: aliceblue;
-}
-
-/* line 24, ../../Proyecto Javascript/scss/styles.scss */
-h3 {
-  font-size: 4rem;
-  text-align: center;
-  font-family: 'Secular One', sans-serif;
-  color: aliceblue;
-}
-
-/* line 32, ../../Proyecto Javascript/scss/styles.scss */
+/* line 19, ../../Proyecto Javascript/scss/styles.scss */
 #contenedor {
   display: grid;
   grid-template-areas: "navegador" "encabezado" "principal" "pie";
   grid-template-columns: 100%;
-  grid-template-rows: 10rem auto auto 8rem;
+  grid-template-rows: 10rem auto auto 6rem;
 }
 
-/* line 46, ../../Proyecto Javascript/scss/styles.scss */
+/* line 32, ../../Proyecto Javascript/scss/styles.scss */
+.container {
+  margin-bottom: 15rem;
+}
+
+/* line 36, ../../Proyecto Javascript/scss/styles.scss */
 .navegador {
   grid-area: navegador;
 }
 
-/* line 49, ../../Proyecto Javascript/scss/styles.scss */
-.logo {
-  width: 8rem;
+/* line 40, ../../Proyecto Javascript/scss/styles.scss */
+header {
+  grid-area: encabezado;
+  background-color: rgba(66, 64, 64, 0.91);
 }
 
-/* line 53, ../../Proyecto Javascript/scss/styles.scss */
+/* line 45, ../../Proyecto Javascript/scss/styles.scss */
+.principal {
+  grid-area: principal;
+  background-color: rgba(66, 64, 64, 0.91);
+}
+
+/* line 50, ../../Proyecto Javascript/scss/styles.scss */
+.pie {
+  grid-area: pie;
+  background-color: #2a2929;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 61, ../../Proyecto Javascript/scss/styles.scss */
 .nav {
   width: 100%;
   height: 10rem;
@@ -59,51 +64,63 @@ h3 {
   z-index: 2;
 }
 
-/* line 59, ../../Proyecto Javascript/scss/styles.scss */
+/* line 67, ../../Proyecto Javascript/scss/styles.scss */
 .nav a {
   margin: 0.5rem;
   font-size: 1.8rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  height: 4rem;
   display: flex;
   align-items: center;
 }
 
-/* line 71, ../../Proyecto Javascript/scss/styles.scss */
-.logoF1 img {
-  width: 7.5rem;
+/* line 76, ../../Proyecto Javascript/scss/styles.scss */
+.logo {
+  width: 8rem;
 }
 
-/* line 77, ../../Proyecto Javascript/scss/styles.scss */
+/* line 81, ../../Proyecto Javascript/scss/styles.scss */
+.logoF1 img {
+  width: 10rem;
+}
+
+/* line 88, ../../Proyecto Javascript/scss/styles.scss */
 .pref {
   font-size: 1.5rem;
 }
 
-/* line 82, ../../Proyecto Javascript/scss/styles.scss */
-header {
-  grid-area: encabezado;
-  background-color: rgba(66, 64, 64, 0.91);
+/* line 94, ../../Proyecto Javascript/scss/styles.scss */
+h2 {
+  font-size: 6rem;
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+  color: aliceblue;
 }
 
-/* line 87, ../../Proyecto Javascript/scss/styles.scss */
-.principal {
-  grid-area: principal;
-  background-color: rgba(66, 64, 64, 0.91);
+/* line 102, ../../Proyecto Javascript/scss/styles.scss */
+h3 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+  color: aliceblue;
 }
 
-/* line 92, ../../Proyecto Javascript/scss/styles.scss */
-.pie {
-  grid-area: pie;
-  background-color: rgba(66, 64, 64, 0.91);
+/* line 109, ../../Proyecto Javascript/scss/styles.scss */
+h4 {
+  font-family: 'Secular One', sans-serif;
+  font-size: large;
 }
 
-/* line 98, ../../Proyecto Javascript/scss/styles.scss */
+/* line 114, ../../Proyecto Javascript/scss/styles.scss */
 .diseñoTit {
   display: flex;
+  margin-bottom: 5rem;
 }
 
-/* line 101, ../../Proyecto Javascript/scss/styles.scss */
-.formaTit, .formaTit1, .formaTit2, .formaTit3 {
+/* line 119, ../../Proyecto Javascript/scss/styles.scss */
+.formaTit,
+.formaTit1,
+.formaTit2,
+.formaTit3 {
   width: 35rem;
   background-color: #2a2929;
   height: 4rem;
@@ -111,64 +128,66 @@ header {
   margin-right: 4rem;
 }
 
-/* line 116, ../../Proyecto Javascript/scss/styles.scss */
+/* line 136, ../../Proyecto Javascript/scss/styles.scss */
 .contCarousell {
   display: flex;
   justify-content: center;
+  margin-bottom: 15rem;
 }
 
-/* line 120, ../../Proyecto Javascript/scss/styles.scss */
+/* line 142, ../../Proyecto Javascript/scss/styles.scss */
 .carousel {
   width: 80%;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-/* line 132, ../../Proyecto Javascript/scss/styles.scss */
+/* line 153, ../../Proyecto Javascript/scss/styles.scss */
 .tableEvents {
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 15rem;
   display: flex;
   justify-content: center;
 }
 
-/* line 138, ../../Proyecto Javascript/scss/styles.scss */
+/* line 159, ../../Proyecto Javascript/scss/styles.scss */
 .tableEvents table {
   width: 120rem;
 }
 
-/* line 143, ../../Proyecto Javascript/scss/styles.scss */
+/* line 163, ../../Proyecto Javascript/scss/styles.scss */
 .tableEvents td {
   font-family: 'Secular One', sans-serif;
   width: 15rem;
 }
 
-/* line 150, ../../Proyecto Javascript/scss/styles.scss */
+/* line 169, ../../Proyecto Javascript/scss/styles.scss */
 .cuerpoTabla {
   text-align: center;
 }
 
-/* line 153, ../../Proyecto Javascript/scss/styles.scss */
+/* line 172, ../../Proyecto Javascript/scss/styles.scss */
 .cuerpoTabla .banderaPais {
   width: 4rem;
 }
 
-/* line 158, ../../Proyecto Javascript/scss/styles.scss */
+/* line 177, ../../Proyecto Javascript/scss/styles.scss */
 .cuerpoTabla .imagenTabla img {
   width: 12rem;
   background-color: gray;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 168, ../../Proyecto Javascript/scss/styles.scss */
+  /* line 187, ../../Proyecto Javascript/scss/styles.scss */
   thead {
     display: none;
   }
-  /* line 171, ../../Proyecto Javascript/scss/styles.scss */
+  /* line 191, ../../Proyecto Javascript/scss/styles.scss */
   tbody td {
     display: block;
     text-align: center;
   }
-  /* line 176, ../../Proyecto Javascript/scss/styles.scss */
+  /* line 196, ../../Proyecto Javascript/scss/styles.scss */
   tbody td:before {
     content: attr(data-th);
     display: block;
@@ -176,19 +195,19 @@ header {
   }
 }
 
-/* line 185, ../../Proyecto Javascript/scss/styles.scss */
+/* line 206, ../../Proyecto Javascript/scss/styles.scss */
 #eventos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* line 190, ../../Proyecto Javascript/scss/styles.scss */
+/* line 211, ../../Proyecto Javascript/scss/styles.scss */
 #eventos .col-8 {
   width: 35rem;
 }
 
-/* line 193, ../../Proyecto Javascript/scss/styles.scss */
+/* line 214, ../../Proyecto Javascript/scss/styles.scss */
 #eventos .col-8 .flexSchedule {
   width: 30rem;
   height: 37rem;
@@ -196,30 +215,30 @@ header {
   margin: 1rem;
 }
 
-/* line 199, ../../Proyecto Javascript/scss/styles.scss */
+/* line 220, ../../Proyecto Javascript/scss/styles.scss */
 #eventos .col-8 .flexSchedule div {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
-/* line 204, ../../Proyecto Javascript/scss/styles.scss */
+/* line 225, ../../Proyecto Javascript/scss/styles.scss */
 #eventos .col-8 .flexSchedule ul {
   text-align: center;
   margin-right: 1.5rem;
 }
 
-/* line 209, ../../Proyecto Javascript/scss/styles.scss */
+/* line 230, ../../Proyecto Javascript/scss/styles.scss */
 #eventos .col-8 .flexSchedule img {
   width: 100%;
 }
 
-/* line 221, ../../Proyecto Javascript/scss/styles.scss */
+/* line 242, ../../Proyecto Javascript/scss/styles.scss */
 .pilotos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 226, ../../Proyecto Javascript/scss/styles.scss */
+/* line 247, ../../Proyecto Javascript/scss/styles.scss */
 .pilotos .contenedor {
   width: 30rem;
   margin: 6rem;
@@ -228,7 +247,7 @@ header {
   justify-content: center;
 }
 
-/* line 234, ../../Proyecto Javascript/scss/styles.scss */
+/* line 255, ../../Proyecto Javascript/scss/styles.scss */
 .pilotos .contenedor ul {
   width: 15rem;
   list-style: none;
@@ -238,84 +257,69 @@ header {
   height: 100%;
 }
 
-/* line 243, ../../Proyecto Javascript/scss/styles.scss */
+/* line 264, ../../Proyecto Javascript/scss/styles.scss */
 .pilotos .contenedor ul li {
   margin: 1.5rem;
   color: aliceblue;
 }
 
-/* line 247, ../../Proyecto Javascript/scss/styles.scss */
+/* line 268, ../../Proyecto Javascript/scss/styles.scss */
 .pilotos .contenedor ul li .posicion {
   font-size: xx-large;
 }
 
-/* line 251, ../../Proyecto Javascript/scss/styles.scss */
+/* line 272, ../../Proyecto Javascript/scss/styles.scss */
 .pilotos .contenedor ul li h4 {
   font-size: large;
 }
 
-/* line 265, ../../Proyecto Javascript/scss/styles.scss */
+/* line 285, ../../Proyecto Javascript/scss/styles.scss */
+.titEquipo {
+  margin-top: 5rem;
+}
+
+/* line 288, ../../Proyecto Javascript/scss/styles.scss */
 .imgEquipos {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 
-/* line 271, ../../Proyecto Javascript/scss/styles.scss */
+/* line 294, ../../Proyecto Javascript/scss/styles.scss */
 .imgEquipos :hover {
   transform: scale(1.4);
 }
 
-/* line 275, ../../Proyecto Javascript/scss/styles.scss */
+/* line 298, ../../Proyecto Javascript/scss/styles.scss */
 .imgEquipos img {
-  width: 50%;
-  border: 0.8rem solid gray;
+  width: 30%;
+  border: 0.8rem gray;
   border-style: outset;
   padding: 4rem;
 }
 
-/* line 284, ../../Proyecto Javascript/scss/styles.scss */
-.flexPilotos {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
-}
-
-/* line 290, ../../Proyecto Javascript/scss/styles.scss */
-.flexPilotos div {
-  margin: 3rem;
-}
-
-/* line 294, ../../Proyecto Javascript/scss/styles.scss */
-.flexPilotos h4 {
-  font-size: 3.5rem;
-  font-family: 'Alumni Sans Inline One', cursive;
-  padding: 0.5rem;
-}
-
-/* line 301, ../../Proyecto Javascript/scss/styles.scss */
+/* line 307, ../../Proyecto Javascript/scss/styles.scss */
 .posicionPuntosEquipo {
   display: flex;
   margin-bottom: 1rem;
   justify-content: center;
 }
 
-/* line 306, ../../Proyecto Javascript/scss/styles.scss */
+/* line 312, ../../Proyecto Javascript/scss/styles.scss */
 .posicionPuntosEquipo h4 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-family: 'Alumni Sans Inline One', cursive;
   padding: 0.5rem;
   margin: 2rem;
 }
 
-/* line 316, ../../Proyecto Javascript/scss/styles.scss */
+/* line 322, ../../Proyecto Javascript/scss/styles.scss */
 .divBoton {
   display: flex;
   justify-content: center;
 }
 
-/* line 320, ../../Proyecto Javascript/scss/styles.scss */
+/* line 326, ../../Proyecto Javascript/scss/styles.scss */
 .divBoton button {
   width: 12rem;
   height: 6rem;
