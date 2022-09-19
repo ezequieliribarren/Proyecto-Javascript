@@ -403,7 +403,6 @@ function pilots() {
         .then(response => response.json())
         .then(data => {
             let pilots = data.response
-            console.log(pilots)
             for (const x of pilots) {
                 let pilotos = document.querySelector('.pilotos')
                 let contenedor = document.createElement("div")
