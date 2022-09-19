@@ -273,24 +273,24 @@ h4 {
   font-size: large;
 }
 
-/* line 285, ../../Proyecto Javascript/scss/styles.scss */
+/* line 283, ../../Proyecto Javascript/scss/styles.scss */
 .titEquipo {
   margin-top: 5rem;
 }
 
-/* line 288, ../../Proyecto Javascript/scss/styles.scss */
+/* line 286, ../../Proyecto Javascript/scss/styles.scss */
 .imgEquipos {
   display: flex;
   justify-content: center;
   margin-bottom: 8rem;
 }
 
-/* line 294, ../../Proyecto Javascript/scss/styles.scss */
+/* line 291, ../../Proyecto Javascript/scss/styles.scss */
 .imgEquipos :hover {
-  transform: scale(1.4);
+  transform: scale(1.1);
 }
 
-/* line 298, ../../Proyecto Javascript/scss/styles.scss */
+/* line 295, ../../Proyecto Javascript/scss/styles.scss */
 .imgEquipos img {
   width: 30%;
   border: 0.8rem gray;
@@ -298,14 +298,14 @@ h4 {
   padding: 4rem;
 }
 
-/* line 307, ../../Proyecto Javascript/scss/styles.scss */
+/* line 304, ../../Proyecto Javascript/scss/styles.scss */
 .posicionPuntosEquipo {
   display: flex;
   margin-bottom: 1rem;
   justify-content: center;
 }
 
-/* line 312, ../../Proyecto Javascript/scss/styles.scss */
+/* line 309, ../../Proyecto Javascript/scss/styles.scss */
 .posicionPuntosEquipo h4 {
   font-size: 4.5rem;
   font-family: 'Alumni Sans Inline One', cursive;
@@ -313,13 +313,13 @@ h4 {
   margin: 2rem;
 }
 
-/* line 322, ../../Proyecto Javascript/scss/styles.scss */
+/* line 319, ../../Proyecto Javascript/scss/styles.scss */
 .divBoton {
   display: flex;
   justify-content: center;
 }
 
-/* line 326, ../../Proyecto Javascript/scss/styles.scss */
+/* line 323, ../../Proyecto Javascript/scss/styles.scss */
 .divBoton button {
   width: 12rem;
   height: 6rem;
