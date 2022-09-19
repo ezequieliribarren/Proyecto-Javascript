@@ -20,7 +20,7 @@ body {
 /* line 19, ../../Proyecto Javascript/scss/styles.scss */
 #contenedor {
   display: grid;
-  grid-template-areas: "navegador" "encabezado" "principal" "pie";
+  grid-template-areas: "navegador" "encabezado" "principal" "pie";
   grid-template-columns: 100%;
   grid-template-rows: 10rem auto auto 6rem;
 }
